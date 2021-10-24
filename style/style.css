@@ -1033,7 +1033,7 @@ header .container .row {
 
 footer {
     display: block;
-    background: url('/assets/images/footer-bg.webp') center / cover no-repeat;
+    background: url('../assets/images/footer-bg.webp') center / cover no-repeat;
     box-sizing: border-box;
     padding: 275px 0 45px;
     margin-top: -175px;
