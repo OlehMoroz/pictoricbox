@@ -1,0 +1,27 @@
+@font-face {
+    font-family: 'Shnobel';
+    src: local('Shnobel Oblique'), local('../assets/fonts/Shnobel-Oblique'), url('../assets/fonts/Shnobeloblique.woff2') format('woff2'), url('../assets/fonts/Shnobeloblique.woff') format('woff'), url('../assets/fonts/Shnobeloblique.ttf') format('truetype');
+    font-weight: 400;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Shnobel';
+    src: local('Shnobel Regular'), local('../assets/fonts/Shnobel-Regular'), url('../assets/fonts/Shnobelregular.woff2') format('woff2'), url('../assets/fonts/Shnobelregular.woff') format('woff'), url('../assets/fonts/Shnobelregular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Uni Neue';
+    src: local('Uni Neue Light'), local('../assets/fonts/UniNeueLight'), url('../assets/fonts/Unineuelight.woff2') format('woff2'), url('../assets/fonts/Unineuelight.woff') format('woff'), url('../assets/fonts/Unineuelight.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Uni Neue';
+    src: local('Uni Neue Heavy Italic'), local('../assets/fonts/UniNeueHeavy-Italic'), url('../assets/fonts/Unineueheavyitalic.woff2') format('woff2'), url('../assets/fonts/Unineueheavyitalic.woff') format('woff'), url('../assets/fonts/Unineueheavyitalic.ttf') format('truetype');
+    font-weight: 800;
+    font-style: italic;
+}
