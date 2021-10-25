@@ -31,9 +31,19 @@ document.addEventListener('DOMContentLoaded', () => {
     /* Carousel z-index */
 
     const carouselItem = document.querySelectorAll('.main-carousel-item'),
-        carouseWrap = document.querySelector('.main-carousel-wrap');
+        carouseWrap = document.querySelector('.main-carousel-wrap'),
+        carouselBtn = document.querySelectorAll('.carousel-btn');
 
     carouselItem.forEach(item => {
+        item.addEventListener('mouseover', () => {
+            carouseWrap.style.cssText = 'z-index: 3';
+        });
+        item.addEventListener('mouseout', () => {
+            carouseWrap.style.cssText = 'z-index: 0';
+        });
+    });
+
+    carouselBtn.forEach(item => {
         item.addEventListener('mouseover', () => {
             carouseWrap.style.cssText = 'z-index: 3';
         });
