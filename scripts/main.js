@@ -173,7 +173,7 @@ document.addEventListener('DOMContentLoaded', () => {
         ],
     });
 
-    const width = document.documentElement.outerWidth,
+    const width = document.documentElement.clientWidth,
         widthBlock = document.querySelector('.width');
 
     function widthOuter() {
