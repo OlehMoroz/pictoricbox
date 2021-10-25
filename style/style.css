@@ -1690,6 +1690,9 @@ footer .container .row {
     .mint-tube {
         top: 57%;
     }
+    .artist-item {
+        top: 80%;
+    }
     .main-carousel-item.slick-active .artist-item {
         top: 80%;
     }
