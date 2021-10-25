@@ -1755,6 +1755,9 @@ footer .container .row {
         top: 63%;
         left: 47%;
     }
+    .second-additional-image {
+        top: -8%;
+    }
 }
 
 @media screen and (max-width: 380px) {

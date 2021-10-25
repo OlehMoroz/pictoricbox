@@ -173,5 +173,11 @@ document.addEventListener('DOMContentLoaded', () => {
         ],
     });
 
+    const width = document.documentElement.outerWidth,
+        widthBlock = document.querySelector('.width');
 
+    function width() {
+        widthBlock.innerHTML(`${width} px`);
+    }
+    width();
 });
