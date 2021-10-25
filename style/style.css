@@ -1781,7 +1781,7 @@ footer .container .row {
     }
 }
 
-@media screen and (max-width: 390px) {
+@media screen and (max-width: 400px) {
     .second-additional-image {
         top: -4%;
     }
