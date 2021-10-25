@@ -1,6 +1,13 @@
 'use strict';
+import { addMainCarouselitem, addMintCarouselitem, addArtistCarouselitem } from "./add-item.js";
 
 document.addEventListener('DOMContentLoaded', () => {
+
+    addMainCarouselitem();
+    addMintCarouselitem();
+    addArtistCarouselitem();
+
+
     /* WOW animate */
     const wow = new WOW({
         boxClass: 'wow',
