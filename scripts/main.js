@@ -123,7 +123,7 @@ document.addEventListener('DOMContentLoaded', () => {
     $('.main-carousel').slick({
         slidesToShow: 6.6,
         slidesToScroll: 1,
-        autoplay: true,
+        autoplay: false,
         autoplaySpeed: 2500,
         speed: 1300,
         infinite: true,
