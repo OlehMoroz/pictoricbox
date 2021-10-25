@@ -34,7 +34,7 @@ export function addMainCarouselitem() {
         "assets/images/artist-1.webp",
         "Yulia Tveritina",
         'Yulia Tveritina"',
-        'assets/images/illustration-1.webp',
+        'assets/images/main-lillustration/main-illustratin-1.webp',
         'Yulia Tveritina"',
         "#main-carousel"
     ).render();
@@ -43,7 +43,7 @@ export function addMainCarouselitem() {
         "assets/images/artist-1.webp",
         "Yulia Tveritina",
         'Yulia Tveritina"',
-        'assets/images/illustration-1.webp',
+        'assets/images/main-lillustration/main-illustratin-2.webp',
         'Yulia Tveritina"',
         "#main-carousel"
     ).render();
@@ -52,7 +52,7 @@ export function addMainCarouselitem() {
         "assets/images/artist-1.webp",
         "Yulia Tveritina",
         'Yulia Tveritina"',
-        'assets/images/illustration-1.webp',
+        'assets/images/main-lillustration/main-illustratin-3.webp',
         'Yulia Tveritina"',
         "#main-carousel"
     ).render();
@@ -61,7 +61,7 @@ export function addMainCarouselitem() {
         "assets/images/artist-1.webp",
         "Yulia Tveritina",
         'Yulia Tveritina"',
-        'assets/images/illustration-1.webp',
+        'assets/images/main-lillustration/main-illustratin-4.webp',
         'Yulia Tveritina"',
         "#main-carousel"
     ).render();
@@ -70,7 +70,7 @@ export function addMainCarouselitem() {
         "assets/images/artist-1.webp",
         "Yulia Tveritina",
         'Yulia Tveritina"',
-        'assets/images/illustration-1.webp',
+        'assets/images/main-lillustration/main-illustratin-5.webp',
         'Yulia Tveritina"',
         "#main-carousel"
     ).render();
@@ -79,7 +79,7 @@ export function addMainCarouselitem() {
         "assets/images/artist-1.webp",
         "Yulia Tveritina",
         'Yulia Tveritina"',
-        'assets/images/illustration-1.webp',
+        'assets/images/main-lillustration/main-illustratin-6.webp',
         'Yulia Tveritina"',
         "#main-carousel"
     ).render();
@@ -88,10 +88,11 @@ export function addMainCarouselitem() {
         "assets/images/artist-1.webp",
         "Yulia Tveritina",
         'Yulia Tveritina"',
-        'assets/images/illustration-1.webp',
+        'assets/images/main-lillustration/main-illustratin-1.webp',
         'Yulia Tveritina"',
         "#main-carousel"
     ).render();
+
 }
 
 
@@ -119,35 +120,41 @@ export function addMintCarouselitem() {
     }
 
     new CarouselCanYouMint(
-        "assets/images/mint-illustration-1.webp",
+        "assets/images/illustration/mint-illustration-1.webp",
         "can-you-mint",
         'Artwork #1 by E. Tikhonyukv',
         "#mint-carousel"
     ).render();
 
     new CarouselCanYouMint(
-        "assets/images/mint-illustration-1.webp",
+        "assets/images/illustration/mint-illustration-2.webp",
         "can-you-mint",
         'Artwork #1 by E. Tikhonyukv',
         "#mint-carousel"
     ).render();
 
     new CarouselCanYouMint(
-        "assets/images/mint-illustration-1.webp",
+        "assets/images/illustration/mint-illustration-3.webp",
         "can-you-mint",
         'Artwork #1 by E. Tikhonyukv',
         "#mint-carousel"
     ).render();
 
     new CarouselCanYouMint(
-        "assets/images/mint-illustration-1.webp",
+        "assets/images/illustration/mint-illustration-4.webp",
         "can-you-mint",
         'Artwork #1 by E. Tikhonyukv',
         "#mint-carousel"
     ).render();
 
     new CarouselCanYouMint(
-        "assets/images/mint-illustration-1.webp",
+        "assets/images/illustration/mint-illustration-5.webp",
+        "can-you-mint",
+        'Artwork #1 by E. Tikhonyukv',
+        "#mint-carousel"
+    ).render();
+    new CarouselCanYouMint(
+        "assets/images/illustration/mint-illustration-6.webp",
         "can-you-mint",
         'Artwork #1 by E. Tikhonyukv',
         "#mint-carousel"
@@ -201,7 +208,7 @@ export function addArtistCarouselitem() {
     }
 
     new CarouselCanYouMintArtist(
-        "assets/images/slide-artist-1.webp",
+        "assets/images/artists/artist-1.webp",
         "slide-artist-mint",
         'Olena Tykhoniuk',
         '#',
@@ -211,7 +218,7 @@ export function addArtistCarouselitem() {
     ).render();
 
     new CarouselCanYouMintArtist(
-        "assets/images/slide-artist-1.webp",
+        "assets/images/artists/artist-2.webp",
         "slide-artist-mint",
         'Olena Tykhoniuk',
         '#',
@@ -221,7 +228,7 @@ export function addArtistCarouselitem() {
     ).render();
 
     new CarouselCanYouMintArtist(
-        "assets/images/slide-artist-1.webp",
+        "assets/images/artists/artist-3.webp",
         "slide-artist-mint",
         'Olena Tykhoniuk',
         '#',
@@ -231,7 +238,7 @@ export function addArtistCarouselitem() {
     ).render();
 
     new CarouselCanYouMintArtist(
-        "assets/images/slide-artist-1.webp",
+        "assets/images/artists/artist-4.webp",
         "slide-artist-mint",
         'Olena Tykhoniuk',
         '#',
@@ -241,7 +248,7 @@ export function addArtistCarouselitem() {
     ).render();
 
     new CarouselCanYouMintArtist(
-        "assets/images/slide-artist-1.webp",
+        "assets/images/artists/artist-5.webp",
         "slide-artist-mint",
         'Olena Tykhoniuk',
         '#',
@@ -251,7 +258,7 @@ export function addArtistCarouselitem() {
     ).render();
 
     new CarouselCanYouMintArtist(
-        "assets/images/slide-artist-1.webp",
+        "assets/images/artists/artist-6.webp",
         "slide-artist-mint",
         'Olena Tykhoniuk',
         '#',
@@ -259,4 +266,95 @@ export function addArtistCarouselitem() {
         '#',
         "#artist-carousel"
     ).render();
+
+    new CarouselCanYouMintArtist(
+        "assets/images/artists/artist-7.webp",
+        "slide-artist-mint",
+        'Olena Tykhoniuk',
+        '#',
+        '#',
+        '#',
+        "#artist-carousel"
+    ).render();
+
+    new CarouselCanYouMintArtist(
+        "assets/images/artists/artist-8.webp",
+        "slide-artist-mint",
+        'Olena Tykhoniuk',
+        '#',
+        '#',
+        '#',
+        "#artist-carousel"
+    ).render();
+
+    new CarouselCanYouMintArtist(
+        "assets/images/artists/artist-9.webp",
+        "slide-artist-mint",
+        'Olena Tykhoniuk',
+        '#',
+        '#',
+        '#',
+        "#artist-carousel"
+    ).render();
+
+    new CarouselCanYouMintArtist(
+        "assets/images/artists/artist-10.webp",
+        "slide-artist-mint",
+        'Olena Tykhoniuk',
+        '#',
+        '#',
+        '#',
+        "#artist-carousel"
+    ).render();
+
+    new CarouselCanYouMintArtist(
+        "assets/images/artists/artist-11.webp",
+        "slide-artist-mint",
+        'Olena Tykhoniuk',
+        '#',
+        '#',
+        '#',
+        "#artist-carousel"
+    ).render();
+
+    new CarouselCanYouMintArtist(
+        "assets/images/artists/artist-12.webp",
+        "slide-artist-mint",
+        'Olena Tykhoniuk',
+        '#',
+        '#',
+        '#',
+        "#artist-carousel"
+    ).render();
+
+    new CarouselCanYouMintArtist(
+        "assets/images/artists/artist-13.webp",
+        "slide-artist-mint",
+        'Olena Tykhoniuk',
+        '#',
+        '#',
+        '#',
+        "#artist-carousel"
+    ).render();
+
+    new CarouselCanYouMintArtist(
+        "assets/images/artists/artist-14.webp",
+        "slide-artist-mint",
+        'Olena Tykhoniuk',
+        '#',
+        '#',
+        '#',
+        "#artist-carousel"
+    ).render();
+
+    new CarouselCanYouMintArtist(
+        "assets/images/artists/artist-15.webp",
+        "slide-artist-mint",
+        'Olena Tykhoniuk',
+        '#',
+        '#',
+        '#',
+        "#artist-carousel"
+    ).render();
+
 }

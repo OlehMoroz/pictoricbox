@@ -113,8 +113,8 @@ document.addEventListener('DOMContentLoaded', () => {
     $('.main-carousel').slick({
         slidesToShow: 6.6,
         slidesToScroll: 1,
-        autoplay: true,
-        autoplaySpeed: 10000,
+        /*autoplay: true,*/
+        autoplaySpeed: 2500,
         infinite: true,
         arrows: true,
         prevArrow: '<button class="carousel-btn prev-btn"></button>',
@@ -153,9 +153,9 @@ document.addEventListener('DOMContentLoaded', () => {
     $('.can-you-mint_carousel').slick({
         slidesToShow: 4,
         slidesToScroll: 1,
-        autoplay: false,
-        autoplaySpeed: 10000,
-        infinite: false,
+        autoplay: true,
+        autoplaySpeed: 2500,
+        infinite: true,
         arrows: true,
         prevArrow: '<button class="carousel-btn mint-carousel-btn prev-btn"></button>',
         nextArrow: '<button class="carousel-btn mint-carousel-btn next-btn"></button>',
