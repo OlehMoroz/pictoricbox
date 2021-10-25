@@ -1760,6 +1760,36 @@ footer .container .row {
     }
 }
 
+@media screen and (max-width: 415px) {
+    .mint_section {
+        padding: 110% 0 145%;
+    }
+    .mint-artist-image-4 {
+        top: 33%;
+    }
+    .mint-artist-image-6 {
+        top: 31%;
+    }
+    .artist_section::before {
+        top: 60px;
+    }
+    .second-additional-image {
+        top: -5px;
+    }
+}
+
+@media screen and (max-width: 390px) {
+    .second-additional-image {
+        top: -4%;
+    }
+    .mint_section {
+        padding: 145% 0 145%;
+    }
+    .mint-artist-image-6 {
+        top: 35%;
+    }
+}
+
 @media screen and (max-width: 380px) {
     .can-you-mint_title,
     .can-you-mint_title h3 {
