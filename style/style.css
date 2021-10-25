@@ -1779,6 +1779,9 @@ footer .container .row {
     .second-additional-image {
         top: -5px;
     }
+    .mint-content {
+        margin: 260px auto 207px;
+    }
 }
 
 @media screen and (max-width: 400px) {
@@ -1796,6 +1799,18 @@ footer .container .row {
     }
     .mint-artist-image-6 {
         top: 31%;
+    }
+    .mint-content {
+        margin: 125px auto 207px;
+    }
+}
+
+@media screen and (max-width: 390px) {
+    .mint-content {
+        margin: 205px auto 207px;
+    }
+    .mint-artist-image-6 {
+        top: 36%;
     }
 }
 
