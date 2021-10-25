@@ -172,12 +172,4 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         ],
     });
-
-    const width = document.documentElement.clientWidth,
-        widthBlock = document.querySelector('.width');
-
-    function widthOuter() {
-        widthBlock.innerHTML = `${width} px`;
-    }
-    widthOuter();
 });
