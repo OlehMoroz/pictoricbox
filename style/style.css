@@ -1791,6 +1791,12 @@ footer .container .row {
     .mint-artist-image-6 {
         top: 35%;
     }
+    .mint-artist-image-4 {
+        top: 33%;
+    }
+    .mint-artist-image-6 {
+        top: 31%;
+    }
 }
 
 @media screen and (max-width: 380px) {
