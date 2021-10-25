@@ -425,7 +425,11 @@ header .container .row {
 .slick-slide {
     padding: 0;
     margin: 0;
-    transition: all .6s linear;
+    transition: all 1s linear;
+}
+
+.main-carousel-illustration {
+    transition: all 1s linear;
 }
 
 .main-carousel-item {
@@ -435,6 +439,7 @@ header .container .row {
     position: relative;
     -webkit-animation: translateY 5s infinite ease-in-out;
     animation: translateY 5s infinite ease-in-out;
+    bottom: 0;
 }
 
 .main-carousel-item.slick-current.slick-active {
@@ -457,7 +462,7 @@ header .container .row {
     filter: drop-shadow(0px 40px 60px rgba(0, 0, 0, 0.15));
     border-radius: 50px;
     border: 3px solid rgba(255, 255, 255, 0.35);
-    transition: all .5s linear;
+    transition: all 1s linear;
 }
 
 .artist-item {
@@ -494,11 +499,12 @@ header .container .row {
 
 .main-carousel-item.slick-current+.slick-active {
     margin-top: 15px;
-    min-width: 490px;
-    top: -370px;
+    width: 490px !important;
+    bottom: 370px;
     z-index: 3;
     -webkit-animation: none;
     animation: none;
+    position: relative;
 }
 
 .main-carousel-item.slick-current+.slick-active .artist-item {
@@ -1219,8 +1225,8 @@ footer .container .row {
         right: 5%;
     }
     .main-carousel-item.slick-current+.slick-active {
-        min-width: 390px;
-        top: -320px;
+        width: 390px !important;
+        bottom: 320px;
     }
     .bird-img {
         right: 5%;
@@ -1271,8 +1277,8 @@ footer .container .row {
 
 @media screen and (max-width: 1370px) {
     .main-carousel-item.slick-current+.slick-active {
-        min-width: 330px;
-        top: -265px;
+        width: 330px;
+        bottom: 265px;
     }
     .main-carousel_section::before {
         top: -163px;
@@ -1420,8 +1426,8 @@ footer .container .row {
         overflow: visible;
     }
     .main-carousel-item.slick-current+.slick-active {
-        min-width: 0;
-        top: 0;
+        width: 305px !important;
+        bottom: 0;
     }
     .main-carousel-item.slick-current+.slick-active .artist-item {
         opacity: 0;

@@ -113,8 +113,9 @@ document.addEventListener('DOMContentLoaded', () => {
     $('.main-carousel').slick({
         slidesToShow: 6.6,
         slidesToScroll: 1,
-        /*autoplay: true,*/
+        autoplay: false,
         autoplaySpeed: 2500,
+        speed: 1300,
         infinite: true,
         arrows: true,
         prevArrow: '<button class="carousel-btn prev-btn"></button>',
@@ -135,16 +136,16 @@ document.addEventListener('DOMContentLoaded', () => {
                 breakpoint: 870,
                 settings: {
                     slidesToShow: 2,
-                    autoplay: false,
-                    infinite: false,
+                    autoplay: true,
+                    infinite: true,
                 }
             },
             {
                 breakpoint: 560,
                 settings: {
                     slidesToShow: 1,
-                    autoplay: false,
-                    infinite: false,
+                    autoplay: true,
+                    infinite: true,
                 }
             }
         ],
@@ -155,6 +156,7 @@ document.addEventListener('DOMContentLoaded', () => {
         slidesToScroll: 1,
         autoplay: true,
         autoplaySpeed: 2500,
+        speed: 1300,
         infinite: true,
         arrows: true,
         prevArrow: '<button class="carousel-btn mint-carousel-btn prev-btn"></button>',
