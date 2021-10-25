@@ -88,7 +88,25 @@ export function addMainCarouselitem() {
         "assets/images/artist-1.webp",
         "Yulia Tveritina",
         'Yulia Tveritina"',
-        'assets/images/main-lillustration/main-illustratin-1.webp',
+        'assets/images/main-lillustration/main-illustratin-7.webp',
+        'Yulia Tveritina"',
+        "#main-carousel"
+    ).render();
+
+    new CarouselMain(
+        "assets/images/artist-1.webp",
+        "Yulia Tveritina",
+        'Yulia Tveritina"',
+        'assets/images/main-lillustration/main-illustratin-8.webp',
+        'Yulia Tveritina"',
+        "#main-carousel"
+    ).render();
+
+    new CarouselMain(
+        "assets/images/artist-1.webp",
+        "Yulia Tveritina",
+        'Yulia Tveritina"',
+        'assets/images/main-lillustration/main-illustratin-9.webp',
         'Yulia Tveritina"',
         "#main-carousel"
     ).render();

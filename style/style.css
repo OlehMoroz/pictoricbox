@@ -620,6 +620,10 @@ header .container .row {
     top: 35%;
 }
 
+.main-carousel-illustration img {
+    width: 100%;
+}
+
 .eye-one {
     position: absolute;
     left: 29px;
