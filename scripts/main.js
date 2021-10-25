@@ -176,8 +176,8 @@ document.addEventListener('DOMContentLoaded', () => {
     const width = document.documentElement.outerWidth,
         widthBlock = document.querySelector('.width');
 
-    function width() {
+    function widthOuter() {
         widthBlock.innerHTML(`${width} px`);
     }
-    width();
+    widthOuter();
 });
