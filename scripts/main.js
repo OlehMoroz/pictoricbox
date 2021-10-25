@@ -177,7 +177,7 @@ document.addEventListener('DOMContentLoaded', () => {
         widthBlock = document.querySelector('.width');
 
     function widthOuter() {
-        widthBlock.innerHTML(`${width} px`);
+        widthBlock.innerHTML = `${width} px`;
     }
     widthOuter();
 });
