@@ -31,12 +31,12 @@ export function addMainCarouselitem() {
     }
 
     new CarouselMain(
-        "assets/images/artist-1.webp",
-        "Yulia Tveritina",
-        'Yulia Tveritina"',
-        'assets/images/main-lillustration/main-illustratin-1.webp',
-        'Yulia Tveritina"',
-        "#main-carousel"
+        "assets/images/artist-1.webp", // src
+        "Yulia Tveritina", // alt attribute image
+        'Yulia Tveritina"', // alt attribute image for artist
+        'assets/images/main-lillustration/main-illustratin-1.webp', // artist image
+        'Yulia Tveritina"', // artist name
+        "#main-carousel" // parent selector
     ).render();
 
     new CarouselMain(
@@ -138,10 +138,10 @@ export function addMintCarouselitem() {
     }
 
     new CarouselCanYouMint(
-        "assets/images/illustration/mint-illustration-1.webp",
-        "can-you-mint",
-        'Artwork #1 by E. Tikhonyukv',
-        "#mint-carousel"
+        "assets/images/illustration/mint-illustration-1.webp", // src image
+        "can-you-mint", // alt attribute imge
+        'Artwork #1 by E. Tikhonyukv', // illustration or image name
+        "#mint-carousel" // parent selector
     ).render();
 
     new CarouselCanYouMint(
@@ -226,13 +226,13 @@ export function addArtistCarouselitem() {
     }
 
     new CarouselCanYouMintArtist(
-        "assets/images/artists/artist-1.webp",
-        "slide-artist-mint",
-        'Olena Tykhoniuk',
-        '#',
-        '#',
-        '#',
-        "#artist-carousel"
+        "assets/images/artists/artist-1.webp", // src image
+        "slide-artist-mint", // alt attribute image
+        'Olena Tykhoniuk', // artist name
+        '#', // facebook link
+        '#', // becance link
+        '#', // instagram link
+        "#artist-carousel" // parent selector
     ).render();
 
     new CarouselCanYouMintArtist(

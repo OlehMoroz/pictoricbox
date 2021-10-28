@@ -146,6 +146,7 @@ body {
     -webkit-animation-timing-function: ease-in-out;
     animation-timing-function: ease-in-out;
     transition: all .3s linear, all .3s linear, transform .3s linear, opacity .3s linear;
+    -webkit-transition: all .3s linear, transform .3s linear, opacity .3s linear;
     -webkit-animation-fill-mode: both;
     animation-fill-mode: both;
 }
@@ -158,6 +159,7 @@ body {
     -webkit-animation-timing-function: ease-in-out;
     animation-timing-function: ease-in-out;
     transition: all .3s linear, all .3s linear, transform .3s linear, opacity .3s linear;
+    -webkit-transition: all .3s linear, transform .3s linear, opacity .3s linear;
     -webkit-animation-fill-mode: both;
     animation-fill-mode: both;
 }
@@ -205,10 +207,11 @@ header {
 
 .install-button {
     display: inline-flex;
-    background: #05B6B7;
+    background: url("/assets/images/button-before.webp") center / 100% 100% no-repeat;
+    /*background: #05B6B7;
     background-size: cover;
     -webkit-clip-path: url(#button-clip-path);
-    clip-path: url(#button-clip-path);
+    clip-path: url(#button-clip-path);*/
     box-sizing: border-box;
     padding: 18px 20px 15px;
     font-family: "Shnobel", sans-serif;
@@ -220,14 +223,16 @@ header {
     text-transform: uppercase;
     -webkit-text-transform: uppercase;
     color: #fff;
-    transition: all .5s linear;
+    transition: all .5s linear, all .5s linear, transform .5s linear, opacity .5s linear, background .5s linear;
+    -webkit-transition: all .5s linear, transform .5s linear, opacity .5s linear, background .5s linear;
     cursor: pointer;
 }
 
 .install-button:hover,
 .install-button:active,
 .install-button:focus {
-    background: #0E5A55;
+    background: url("/assets/images/button-before-white.webp") center / 100% 100% no-repeat;
+    color: #05B6B7;
 }
 
 .container {
@@ -276,6 +281,7 @@ header .container .row {
     -webkit-text-transform: uppercase;
     color: #303030;
     transition: all .5s linear, all .5s linear, transform .5s linear, opacity .5s linear;
+    -webkit-transition: all .5s linear, transform .6s linear, opacity .5s linear;
     cursor: pointer;
     display: block;
 }
@@ -313,9 +319,10 @@ header .container .row {
 }
 
 .install-button-border {
-    background: #05B6B7;
+    background: url("/assets/images/button-before-white.webp") center / 100% 100% no-repeat;
+    /*background: #05B6B7;
     -webkit-clip-path: url(#button-clip-path);
-    clip-path: url(#button-clip-path);
+    clip-path: url(#button-clip-path);*/
     position: relative;
     z-index: 1;
     color: #05B6B7;
@@ -323,9 +330,11 @@ header .container .row {
 
 .install-button-border:hover {
     color: #fff;
+    background: url("/assets/images/button-before.webpg") center / 100% 100% no-repeat;
 }
 
-.install-button-border::before {
+
+/*.install-button-border::before {
     content: "";
     z-index: -1;
     width: calc(100% - 2px);
@@ -342,7 +351,7 @@ header .container .row {
 
 .install-button-border:hover::before {
     opacity: 0;
-}
+}*/
 
 .main-carousel_content {
     display: flex;
@@ -378,6 +387,7 @@ header .container .row {
 .social-row a {
     margin: 0 10px;
     transition: all .3s linear, all .3s linear, transform .3s linear, opacity .3s linear;
+    -webkit-transition: all .3s linear, transform .3s linear, opacity .3s linear;
     display: block;
 }
 
@@ -405,6 +415,7 @@ header .container .row {
     margin-top: -33%;
     width: 105vw;
     max-width: 1955px;
+    -webkit-transition: all 1s linear, transform 1300ms linear, opacity 1s linear, width 1300ms linear;
 }
 
 .main-carousel .slick-list .slick-track {
@@ -534,10 +545,11 @@ header .container .row {
     max-width: 100%;
 }
 
-.main-carousel-wrap:hover {
+
+/*.main-carousel-wrap:hover {
     z-index: 3;
     position: relative;
-}
+}*/
 
 .main-carousel-item:hover~.main-carousel-wrap {
     position: relative;
@@ -853,7 +865,7 @@ header .container .row {
 .mint-button:hover,
 .mint-button:active,
 .mint-button:focus {
-    background: #108f86;
+    color: #fff;
 }
 
 .mint-artist-image {
