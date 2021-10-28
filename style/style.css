@@ -212,7 +212,7 @@ header {
 
 .install-button {
     display: inline-flex;
-    background: url("/assets/images/button-before.webp") center / 100% 100% no-repeat;
+    background: url("../assets/images/button-before.webp") center / 100% 100% no-repeat;
     /*background: #05B6B7;
     background-size: cover;
     -webkit-clip-path: url(#button-clip-path);
@@ -236,7 +236,7 @@ header {
 .install-button:hover,
 .install-button:active,
 .install-button:focus {
-    background: url("/assets/images/button-before-white.webp") center / 100% 100% no-repeat;
+    background: url("../assets/images/button-before-white.webp") center / 100% 100% no-repeat;
     color: #05B6B7;
 }
 
@@ -324,7 +324,7 @@ header .container .row {
 }
 
 .install-button-border {
-    background: url("/assets/images/button-before-white.webp") center / 100% 100% no-repeat;
+    background: url("../assets/images/button-before-white.webp") center / 100% 100% no-repeat;
     /*background: #05B6B7;
     -webkit-clip-path: url(#button-clip-path);
     clip-path: url(#button-clip-path);*/
@@ -335,7 +335,7 @@ header .container .row {
 
 .install-button-border:hover {
     color: #fff;
-    background: url("/assets/images/button-before.webp") center / 100% 100% no-repeat;
+    background: url("../assets/images/button-before.webp") center / 100% 100% no-repeat;
 }
 
 
@@ -350,7 +350,7 @@ header .container .row {
     display: block;
     background: #fff;
     -webkit-clip-path: url(#button-clip-path);
-    clip-path: url(#button-clip-path);
+    clip-path: url(#button-clip-path);g
     transition: all .5s linear, all .5s linear, transform .5s linear, opacity .5s linear;
 }
 
