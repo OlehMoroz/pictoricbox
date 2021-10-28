@@ -124,6 +124,11 @@ body {
     overflow: hidden;
 }
 
+.main-spacer {
+    height: 200px;
+    width: 50%;
+}
+
 .hidden-svg {
     height: 0;
     opacity: 0;
