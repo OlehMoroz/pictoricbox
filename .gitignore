@@ -1,0 +1,10 @@
+.DS_Store
+.Trashes
+.Spotlight-V100
+output
+__pycache__
+.history
+.hypothesis/
+build/
+reports/
+node_modules/
