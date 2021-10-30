@@ -123,7 +123,7 @@ document.addEventListener('DOMContentLoaded', () => {
     $('.main-carousel').slick({
         slidesToShow: 6.6,
         slidesToScroll: 1,
-        autoplay: false,
+        autoplay: true,
         autoplaySpeed: 2500,
         speed: 1300,
         infinite: true,
@@ -146,7 +146,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 breakpoint: 870,
                 settings: {
                     slidesToShow: 2,
-                    autoplay: false,
+                    autoplay: true,
                     infinite: true,
                 }
             },
@@ -154,7 +154,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 breakpoint: 560,
                 settings: {
                     slidesToShow: 1,
-                    autoplay: false,
+                    autoplay: true,
                     infinite: true,
                 }
             }
