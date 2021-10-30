@@ -2,7 +2,8 @@
 
 export function addMainCarouselitem() {
     class CarouselMain {
-        constructor(src, alt, altartist, srcartist, artistname, parentSelector) {
+        constructor(text, src, alt, altartist, srcartist, artistname, parentSelector) {
+            this.text = text;
             this.src = src;
             this.alt = alt;
             this.srcartist = srcartist;
@@ -15,6 +16,7 @@ export function addMainCarouselitem() {
             const element = document.createElement('div');
             element.className = "main-carousel-item";
             element.innerHTML = `
+                    <div class="slide-text">${this.text}</div>
                     <div class="artist-item">
                         <div class="artist-img">
                             <img src=${this.src} alt=${this.alt}>
@@ -30,86 +32,100 @@ export function addMainCarouselitem() {
         }
     }
 
-    new CarouselMain(
-        "assets/images/artist-1.webp", // src
-        "Yulia Tveritina", // alt attribute image
-        'Yulia Tveritina"', // alt attribute image for artist
-        'assets/images/main-lillustration/main-illustratin-1.webp', // artist image
-        'Yulia Tveritina"', // artist name
-        "#main-carousel" // parent selector
-    ).render();
+    const mainIllustrationArray = [{
+            slideText: "some text", // slide text
+            src: "assets/images/artist-1.webp", // src
+            altAttribute: "Yulia Tveritina", // alt attribute image
+            altAttibuteArtist: 'Yulia Tveritina', // alt attribute image for artist
+            srcArtist: 'assets/images/main-lillustration/main-illustratin-1.webp', // artist image
+            artistName: 'Yulia Tveritina' // artist name
+        },
 
-    new CarouselMain(
-        "assets/images/artist-1.webp",
-        "Yulia Tveritina",
-        'Yulia Tveritina"',
-        'assets/images/main-lillustration/main-illustratin-2.webp',
-        'Yulia Tveritina"',
-        "#main-carousel"
-    ).render();
+        {
+            slideText: "some text",
+            src: "assets/images/artist-1.webp",
+            altAttribute: "Yulia Tveritina",
+            altAttibuteArtist: 'Yulia Tveritina',
+            srcArtist: 'assets/images/main-lillustration/main-illustratin-2.webp',
+            artistName: 'Yulia Tveritina'
+        },
 
-    new CarouselMain(
-        "assets/images/artist-1.webp",
-        "Yulia Tveritina",
-        'Yulia Tveritina"',
-        'assets/images/main-lillustration/main-illustratin-3.webp',
-        'Yulia Tveritina"',
-        "#main-carousel"
-    ).render();
+        {
+            slideText: "some text",
+            src: "assets/images/artist-1.webp",
+            altAttribute: "Yulia Tveritina",
+            altAttibuteArtist: 'Yulia Tveritina',
+            srcArtist: 'assets/images/main-lillustration/main-illustratin-3.webp',
+            artistName: 'Yulia Tveritina'
+        },
 
-    new CarouselMain(
-        "assets/images/artist-1.webp",
-        "Yulia Tveritina",
-        'Yulia Tveritina"',
-        'assets/images/main-lillustration/main-illustratin-4.webp',
-        'Yulia Tveritina"',
-        "#main-carousel"
-    ).render();
+        {
+            slideText: "some text",
+            src: "assets/images/artist-1.webp",
+            altAttribute: "Yulia Tveritina",
+            altAttibuteArtist: 'Yulia Tveritina',
+            srcArtist: 'assets/images/main-lillustration/main-illustratin-4.webp',
+            artistName: 'Yulia Tveritina'
+        },
 
-    new CarouselMain(
-        "assets/images/artist-1.webp",
-        "Yulia Tveritina",
-        'Yulia Tveritina"',
-        'assets/images/main-lillustration/main-illustratin-5.webp',
-        'Yulia Tveritina"',
-        "#main-carousel"
-    ).render();
+        {
+            slideText: "some text",
+            src: "assets/images/artist-1.webp",
+            altAttribute: "Yulia Tveritina",
+            altAttibuteArtist: 'Yulia Tveritina',
+            srcArtist: 'assets/images/main-lillustration/main-illustratin-5.webp',
+            artistName: 'Yulia Tveritina'
+        },
 
-    new CarouselMain(
-        "assets/images/artist-1.webp",
-        "Yulia Tveritina",
-        'Yulia Tveritina"',
-        'assets/images/main-lillustration/main-illustratin-6.webp',
-        'Yulia Tveritina"',
-        "#main-carousel"
-    ).render();
+        {
+            slideText: "some text",
+            src: "assets/images/artist-1.webp",
+            altAttribute: "Yulia Tveritina",
+            altAttibuteArtist: 'Yulia Tveritina',
+            srcArtist: 'assets/images/main-lillustration/main-illustratin-6.webp',
+            artistName: 'Yulia Tveritina'
+        },
 
-    new CarouselMain(
-        "assets/images/artist-1.webp",
-        "Yulia Tveritina",
-        'Yulia Tveritina"',
-        'assets/images/main-lillustration/main-illustratin-7.webp',
-        'Yulia Tveritina"',
-        "#main-carousel"
-    ).render();
+        {
+            slideText: "some text",
+            src: "assets/images/artist-1.webp",
+            altAttribute: "Yulia Tveritina",
+            altAttibuteArtist: 'Yulia Tveritina',
+            srcArtist: 'assets/images/main-lillustration/main-illustratin-7.webp',
+            artistName: 'Yulia Tveritina'
+        },
 
-    new CarouselMain(
-        "assets/images/artist-1.webp",
-        "Yulia Tveritina",
-        'Yulia Tveritina"',
-        'assets/images/main-lillustration/main-illustratin-8.webp',
-        'Yulia Tveritina"',
-        "#main-carousel"
-    ).render();
+        {
+            slideText: "some text",
+            src: "assets/images/artist-1.webp",
+            altAttribute: "Yulia Tveritina",
+            altAttibuteArtist: 'Yulia Tveritina"',
+            srcArtist: 'assets/images/main-lillustration/main-illustratin-8.webp',
+            artistName: 'Yulia Tveritina'
+        },
 
-    new CarouselMain(
-        "assets/images/artist-1.webp",
-        "Yulia Tveritina",
-        'Yulia Tveritina"',
-        'assets/images/main-lillustration/main-illustratin-9.webp',
-        'Yulia Tveritina"',
-        "#main-carousel"
-    ).render();
+        {
+            slideText: "some text",
+            src: "assets/images/artist-1.webp",
+            altAttribute: "Yulia Tveritina",
+            altAttibuteArtist: 'Yulia Tveritina',
+            srcArtist: 'assets/images/main-lillustration/main-illustratin-9.webp',
+            artistName: 'Yulia Tveritina'
+        },
+    ];
+
+    for (let i = 0; i < mainIllustrationArray.length; i++) {
+
+        new CarouselMain(
+            mainIllustrationArray[i].slideText,
+            mainIllustrationArray[i].src,
+            mainIllustrationArray[i].altAttribute,
+            mainIllustrationArray[i].altAttibuteArtist,
+            mainIllustrationArray[i].srcArtist,
+            mainIllustrationArray[i].artistName,
+            "#main-carousel",
+        ).render();
+    }
 
 }
 
@@ -137,46 +153,48 @@ export function addMintCarouselitem() {
         }
     }
 
-    new CarouselCanYouMint(
-        "assets/images/illustration/mint-illustration-1.webp", // src image
-        "can-you-mint", // alt attribute imge
-        'Artwork #1 by E. Tikhonyukv', // illustration or image name
-        "#mint-carousel" // parent selector
-    ).render();
+    const carouselCanYouMintArray = [{
+            src: "assets/images/illustration/mint-illustration-1.webp", // src image
+            altAttibute: "can-you-mint", // alt attribute imge
+            imageName: 'Artwork #1 by E. Tikhonyukv' // illustration or image name
+        },
 
-    new CarouselCanYouMint(
-        "assets/images/illustration/mint-illustration-2.webp",
-        "can-you-mint",
-        'Artwork #1 by E. Tikhonyukv',
-        "#mint-carousel"
-    ).render();
+        {
+            src: "assets/images/illustration/mint-illustration-2.webp",
+            altAttibute: "can-you-mint",
+            imageName: 'Artwork #1 by E. Tikhonyukv'
+        },
+        {
+            src: "assets/images/illustration/mint-illustration-3.webp",
+            altAttibute: "can-you-mint",
+            imageName: 'Artwork #1 by E. Tikhonyukv'
+        },
+        {
+            src: "assets/images/illustration/mint-illustration-4.webp",
+            altAttibute: "can-you-mint",
+            imageName: 'Artwork #1 by E. Tikhonyukv'
+        },
+        {
+            src: "assets/images/illustration/mint-illustration-5.webp",
+            altAttibute: "can-you-mint",
+            imageName: 'Artwork #1 by E. Tikhonyukv'
+        },
+        {
+            src: "assets/images/illustration/mint-illustration-6.webp",
+            altAttibute: "can-you-mint",
+            imageName: 'Artwork #1 by E. Tikhonyukv'
+        }
+    ];
 
-    new CarouselCanYouMint(
-        "assets/images/illustration/mint-illustration-3.webp",
-        "can-you-mint",
-        'Artwork #1 by E. Tikhonyukv',
-        "#mint-carousel"
-    ).render();
+    for (let i = 0; i < carouselCanYouMintArray.length; i++) {
 
-    new CarouselCanYouMint(
-        "assets/images/illustration/mint-illustration-4.webp",
-        "can-you-mint",
-        'Artwork #1 by E. Tikhonyukv',
-        "#mint-carousel"
-    ).render();
-
-    new CarouselCanYouMint(
-        "assets/images/illustration/mint-illustration-5.webp",
-        "can-you-mint",
-        'Artwork #1 by E. Tikhonyukv',
-        "#mint-carousel"
-    ).render();
-    new CarouselCanYouMint(
-        "assets/images/illustration/mint-illustration-6.webp",
-        "can-you-mint",
-        'Artwork #1 by E. Tikhonyukv',
-        "#mint-carousel"
-    ).render();
+        new CarouselCanYouMint(
+            carouselCanYouMintArray[i].src,
+            carouselCanYouMintArray[i].altAttribute,
+            carouselCanYouMintArray[i].imageName,
+            "#mint-carousel",
+        ).render();
+    }
 }
 
 export function addArtistCarouselitem() {
@@ -225,154 +243,165 @@ export function addArtistCarouselitem() {
         }
     }
 
-    new CarouselCanYouMintArtist(
-        "assets/images/artists/artist-1.webp", // src image
-        "slide-artist-mint", // alt attribute image
-        'Olena Tykhoniuk', // artist name
-        '#', // facebook link
-        '#', // becance link
-        '#', // instagram link
-        "#artist-carousel" // parent selector
-    ).render();
+    const carouselCanYouMintArtist = [{
+            src: "assets/images/artists/artist-1.webp", // src image
+            altAttribute: "slide-artist-mint", // alt attribute image
+            artistName: 'Olena Tykhoniuk', // artist name
+            facebook: '#', // facebook link
+            behance: '#', // becance link
+            instagram: '#' // instagram link
+        },
+        {
 
-    new CarouselCanYouMintArtist(
-        "assets/images/artists/artist-2.webp",
-        "slide-artist-mint",
-        'Olena Tykhoniuk',
-        '#',
-        '#',
-        '#',
-        "#artist-carousel"
-    ).render();
+            src: "assets/images/artists/artist-2.webp",
+            altAttribute: "slide-artist-mint",
+            artistName: 'Olena Tykhoniuk',
+            facebook: '#',
+            behance: '#',
+            instagram: '#'
+        },
+        {
+            src: "assets/images/artists/artist-3.webp",
+            altAttribute: "slide-artist-mint",
+            artistName: 'Olena Tykhoniuk',
+            facebook: '#',
+            behance: '#',
+            instagram: '#'
+        },
+        {
 
-    new CarouselCanYouMintArtist(
-        "assets/images/artists/artist-3.webp",
-        "slide-artist-mint",
-        'Olena Tykhoniuk',
-        '#',
-        '#',
-        '#',
-        "#artist-carousel"
-    ).render();
 
-    new CarouselCanYouMintArtist(
-        "assets/images/artists/artist-4.webp",
-        "slide-artist-mint",
-        'Olena Tykhoniuk',
-        '#',
-        '#',
-        '#',
-        "#artist-carousel"
-    ).render();
+            src: "assets/images/artists/artist-4.webp",
+            altAttribute: "slide-artist-mint",
+            artistName: 'Olena Tykhoniuk',
+            facebook: '#',
+            behance: '#',
+            instagram: '#'
+        },
+        {
 
-    new CarouselCanYouMintArtist(
-        "assets/images/artists/artist-5.webp",
-        "slide-artist-mint",
-        'Olena Tykhoniuk',
-        '#',
-        '#',
-        '#',
-        "#artist-carousel"
-    ).render();
 
-    new CarouselCanYouMintArtist(
-        "assets/images/artists/artist-6.webp",
-        "slide-artist-mint",
-        'Olena Tykhoniuk',
-        '#',
-        '#',
-        '#',
-        "#artist-carousel"
-    ).render();
+            src: "assets/images/artists/artist-5.webp",
+            altAttribute: "slide-artist-mint",
+            artistName: 'Olena Tykhoniuk',
+            facebook: '#',
+            behance: '#',
+            instagram: '#'
+        },
+        {
 
-    new CarouselCanYouMintArtist(
-        "assets/images/artists/artist-7.webp",
-        "slide-artist-mint",
-        'Olena Tykhoniuk',
-        '#',
-        '#',
-        '#',
-        "#artist-carousel"
-    ).render();
 
-    new CarouselCanYouMintArtist(
-        "assets/images/artists/artist-8.webp",
-        "slide-artist-mint",
-        'Olena Tykhoniuk',
-        '#',
-        '#',
-        '#',
-        "#artist-carousel"
-    ).render();
+            src: "assets/images/artists/artist-6.webp",
+            altAttribute: "slide-artist-mint",
+            artistName: 'Olena Tykhoniuk',
+            facebook: '#',
+            behance: '#',
+            instagram: '#'
+        },
+        {
 
-    new CarouselCanYouMintArtist(
-        "assets/images/artists/artist-9.webp",
-        "slide-artist-mint",
-        'Olena Tykhoniuk',
-        '#',
-        '#',
-        '#',
-        "#artist-carousel"
-    ).render();
 
-    new CarouselCanYouMintArtist(
-        "assets/images/artists/artist-10.webp",
-        "slide-artist-mint",
-        'Olena Tykhoniuk',
-        '#',
-        '#',
-        '#',
-        "#artist-carousel"
-    ).render();
+            src: "assets/images/artists/artist-7.webp",
+            altAttribute: "slide-artist-mint",
+            artistName: 'Olena Tykhoniuk',
+            facebook: '#',
+            behance: '#',
+            instagram: '#'
+        },
+        {
 
-    new CarouselCanYouMintArtist(
-        "assets/images/artists/artist-11.webp",
-        "slide-artist-mint",
-        'Olena Tykhoniuk',
-        '#',
-        '#',
-        '#',
-        "#artist-carousel"
-    ).render();
 
-    new CarouselCanYouMintArtist(
-        "assets/images/artists/artist-12.webp",
-        "slide-artist-mint",
-        'Olena Tykhoniuk',
-        '#',
-        '#',
-        '#',
-        "#artist-carousel"
-    ).render();
+            src: "assets/images/artists/artist-8.webp",
+            altAttribute: "slide-artist-mint",
+            artistName: 'Olena Tykhoniuk',
+            facebook: '#',
+            behance: '#',
+            instagram: '#'
+        },
+        {
 
-    new CarouselCanYouMintArtist(
-        "assets/images/artists/artist-13.webp",
-        "slide-artist-mint",
-        'Olena Tykhoniuk',
-        '#',
-        '#',
-        '#',
-        "#artist-carousel"
-    ).render();
 
-    new CarouselCanYouMintArtist(
-        "assets/images/artists/artist-14.webp",
-        "slide-artist-mint",
-        'Olena Tykhoniuk',
-        '#',
-        '#',
-        '#',
-        "#artist-carousel"
-    ).render();
+            src: "assets/images/artists/artist-9.webp",
+            altAttribute: "slide-artist-mint",
+            artistName: 'Olena Tykhoniuk',
+            facebook: '#',
+            behance: '#',
+            instagram: '#'
+        },
+        {
 
-    new CarouselCanYouMintArtist(
-        "assets/images/artists/artist-15.webp",
-        "slide-artist-mint",
-        'Olena Tykhoniuk',
-        '#',
-        '#',
-        '#',
-        "#artist-carousel"
-    ).render();
 
+            src: "assets/images/artists/artist-10.webp",
+            altAttribute: "slide-artist-mint",
+            artistName: 'Olena Tykhoniuk',
+            facebook: '#',
+            behance: '#',
+            instagram: '#'
+        },
+        {
+
+
+            src: "assets/images/artists/artist-11.webp",
+            altAttribute: "slide-artist-mint",
+            artistName: 'Olena Tykhoniuk',
+            facebook: '#',
+            behance: '#',
+            instagram: '#'
+        },
+        {
+
+
+            src: "assets/images/artists/artist-12.webp",
+            altAttribute: "slide-artist-mint",
+            artistName: 'Olena Tykhoniuk',
+            facebook: '#',
+            behance: '#',
+            instagram: '#'
+        },
+        {
+
+
+            src: "assets/images/artists/artist-13.webp",
+            altAttribute: "slide-artist-mint",
+            artistName: 'Olena Tykhoniuk',
+            facebook: '#',
+            behance: '#',
+            instagram: '#'
+        },
+        {
+
+
+            src: "assets/images/artists/artist-14.webp",
+            altAttribute: "slide-artist-mint",
+            artistName: 'Olena Tykhoniuk',
+            facebook: '#',
+            behance: '#',
+            instagram: '#'
+        },
+        {
+
+
+            src: "assets/images/artists/artist-15.webp",
+            altAttribute: "slide-artist-mint",
+            artistName: 'Olena Tykhoniuk',
+            facebook: '#',
+            behance: '#',
+            instagram: '#'
+
+        }
+
+    ];
+
+    for (let i = 0; i < carouselCanYouMintArtist.length; i++) {
+
+        new CarouselCanYouMintArtist(
+            carouselCanYouMintArtist[i].src,
+            carouselCanYouMintArtist[i].altAttribute,
+            carouselCanYouMintArtist[i].artistName,
+            carouselCanYouMintArtist[i].facebook,
+            carouselCanYouMintArtist[i].behance,
+            carouselCanYouMintArtist[i].instagram,
+            "#artist-carousel",
+        ).render();
+    }
 }
