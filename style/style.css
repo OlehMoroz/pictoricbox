@@ -1032,7 +1032,7 @@ header .container .row {
     margin-left: 28%;
 }
 
-.can-you-mint_title h3 {
+.can-you-mint_title h2 {
     font-family: "Shnobel", sans-serif;
     font-style: normal;
     font-weight: normal;
@@ -1042,6 +1042,22 @@ header .container .row {
     text-transform: uppercase;
     -webkit-text-transform: uppercase;
     color: #FFFFFF;
+}
+
+.can-you-mint_title h2 span {
+    color: #F39200;
+}
+
+.can-you-mint_title h3 {
+    font-family: "Shnobel", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 60px;
+    line-height: 113.6%;
+    text-align: center;
+    text-transform: uppercase;
+    -webkit-text-transform: uppercase;
+    color: #000000;
 }
 
 .can-you-mint_title h3 span {
