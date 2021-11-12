@@ -7,14 +7,14 @@
  */
 
 :root {
-    --animate-duration: 1s;
+    --animate-duration: 0.25s;
     --animate-delay: 1s;
     --animate-repeat: 1;
 }
 
 .animate__animated {
-    -webkit-animation-duration: 1s;
-    animation-duration: 1s;
+    -webkit-animation-duration: 0.25s;
+    animation-duration: 0.25s;
     -webkit-animation-duration: var(--animate-duration);
     animation-duration: var(--animate-duration);
     -webkit-animation-fill-mode: both;
@@ -83,29 +83,29 @@
 }
 
 .animate__animated.animate__faster {
-    -webkit-animation-duration: calc(1s / 2);
-    animation-duration: calc(1s / 2);
+    -webkit-animation-duration: calc(0.5s / 2);
+    animation-duration: calc(0.5s / 2);
     -webkit-animation-duration: calc(var(--animate-duration) / 2);
     animation-duration: calc(var(--animate-duration) / 2);
 }
 
 .animate__animated.animate__fast {
-    -webkit-animation-duration: calc(1s * 0.8);
-    animation-duration: calc(1s * 0.8);
+    -webkit-animation-duration: calc(0.5s * 0.8);
+    animation-duration: calc(0.5s * 0.8);
     -webkit-animation-duration: calc(var(--animate-duration) * 0.8);
     animation-duration: calc(var(--animate-duration) * 0.8);
 }
 
 .animate__animated.animate__slow {
-    -webkit-animation-duration: calc(1s * 2);
-    animation-duration: calc(1s * 2);
+    -webkit-animation-duration: calc(0.5s * 2);
+    animation-duration: calc(0.5s * 2);
     -webkit-animation-duration: calc(var(--animate-duration) * 2);
     animation-duration: calc(var(--animate-duration) * 2);
 }
 
 .animate__animated.animate__slower {
-    -webkit-animation-duration: calc(1s * 3);
-    animation-duration: calc(1s * 3);
+    -webkit-animation-duration: calc(0.5s * 3);
+    animation-duration: calc(0.5s * 3);
     -webkit-animation-duration: calc(var(--animate-duration) * 3);
     animation-duration: calc(var(--animate-duration) * 3);
 }
@@ -1238,8 +1238,8 @@
 }
 
 .animate__bounceIn {
-    -webkit-animation-duration: calc(1s * 0.75);
-    animation-duration: calc(1s * 0.75);
+    -webkit-animation-duration: calc(0.5s * 0.75);
+    animation-duration: calc(0.5s * 0.75);
     -webkit-animation-duration: calc(var(--animate-duration) * 0.75);
     animation-duration: calc(var(--animate-duration) * 0.75);
     -webkit-animation-name: bounceIn;
@@ -1570,8 +1570,8 @@
 }
 
 .animate__bounceOut {
-    -webkit-animation-duration: calc(1s * 0.75);
-    animation-duration: calc(1s * 0.75);
+    -webkit-animation-duration: calc(0.5s * 0.75);
+    animation-duration: calc(0.5s * 0.75);
     -webkit-animation-duration: calc(var(--animate-duration) * 0.75);
     animation-duration: calc(var(--animate-duration) * 0.75);
     -webkit-animation-name: bounceOut;
@@ -2727,8 +2727,8 @@
 }
 
 .animate__flipOutX {
-    -webkit-animation-duration: calc(1s * 0.75);
-    animation-duration: calc(1s * 0.75);
+    -webkit-animation-duration: calc(0.5s * 0.75);
+    animation-duration: calc(0.5s * 0.75);
     -webkit-animation-duration: calc(var(--animate-duration) * 0.75);
     animation-duration: calc(var(--animate-duration) * 0.75);
     -webkit-animation-name: flipOutX;
@@ -2772,8 +2772,8 @@
 }
 
 .animate__flipOutY {
-    -webkit-animation-duration: calc(1s * 0.75);
-    animation-duration: calc(1s * 0.75);
+    -webkit-animation-duration: calc(0.5s * 0.75);
+    animation-duration: calc(0.5s * 0.75);
     -webkit-animation-duration: calc(var(--animate-duration) * 0.75);
     animation-duration: calc(var(--animate-duration) * 0.75);
     -webkit-backface-visibility: visible !important;
@@ -3305,8 +3305,8 @@
 }
 
 .animate__hinge {
-    -webkit-animation-duration: calc(1s * 2);
-    animation-duration: calc(1s * 2);
+    -webkit-animation-duration: calc(0.25s * 2);
+    animation-duration: calc(0.25s * 2);
     -webkit-animation-duration: calc(var(--animate-duration) * 2);
     animation-duration: calc(var(--animate-duration) * 2);
     -webkit-animation-name: hinge;

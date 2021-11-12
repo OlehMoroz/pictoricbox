@@ -146,8 +146,8 @@ body {
 .wow-offset {
     -webkit-animation-delay: 0s;
     animation-delay: 0s;
-    -webkit-animation-duration: .9s !important;
-    animation-duration: .9s !important;
+    -webkit-animation-duration: .5s !important;
+    animation-duration: .5s !important;
     -webkit-animation-timing-function: ease-in-out;
     animation-timing-function: ease-in-out;
     transition: all .3s linear, all .3s linear, transform .3s linear, opacity .3s linear;
@@ -159,8 +159,8 @@ body {
 .animated {
     -webkit-animation-delay: 0s;
     animation-delay: 0s;
-    -webkit-animation-duration: 1s !important;
-    animation-duration: 1s !important;
+    -webkit-animation-duration: 0.25s !important;
+    animation-duration: 0.25s !important;
     -webkit-animation-timing-function: ease-in-out;
     animation-timing-function: ease-in-out;
     transition: all .3s linear, all .3s linear, transform .3s linear, opacity .3s linear;
@@ -564,6 +564,8 @@ header .container .row {
     transition: all .5s linear, all 1s linear, transform 1s linear, opacity 1.3s linear;
     -webkit-transition: all .5s linear, transform 1s linear, opacity 1.3s linear;
     text-align: center;
+
+    font-family: "Uni Neue", sans-serif;
 }
 
 .main-carousel-item.slick-current+.slick-active .slide-text {
