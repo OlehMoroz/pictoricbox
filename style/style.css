@@ -465,8 +465,8 @@ header .container .row {
     transition: all 1s linear;
     -webkit-transition: all 1s linear, transform 1s linear, opacity 1s linear, width 1s linear, bottom 1s linear;
     position: relative;
-    -webkit-animation: translateY 5s infinite linear;
-    animation: translateY 5s infinite linear;
+    /*-webkit-animation: translateY 5s infinite linear;
+    animation: translateY 5s infinite linear;*/
     bottom: 0;
 }
 
@@ -476,8 +476,8 @@ header .container .row {
 
 .main-carousel-item:nth-child(2n) {
     margin-top: 96px;
-    -webkit-animation-duration: 6s;
-    animation-duration: 6s;
+    /*-webkit-animation-duration: 6s;
+    animation-duration: 6s;*/
 }
 
 .main-carousel-illustration {
@@ -970,15 +970,15 @@ header .container .row {
     box-sizing: border-box;
     transition: all .5s ease-in-out, all .5s linear, transform .5s linear, opacity .5s linear;
     position: relative;
-    -webkit-animation: translateY 5s infinite ease-in-out;
-    animation: translateY 5s infinite ease-in-out;
+    /*-webkit-animation: translateY 5s infinite ease-in-out;
+    animation: translateY 5s infinite ease-in-out;*/
     text-align: center;
 }
 
 .can-you-mint_item:nth-child(2n) {
     margin-top: 96px;
-    -webkit-animation-duration: 6s;
-    animation-duration: 6s;
+    /*-webkit-animation-duration: 6s;
+    animation-duration: 6s;*/
 }
 
 .can-you-mint-image {

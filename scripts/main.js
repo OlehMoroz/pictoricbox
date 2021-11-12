@@ -1,11 +1,11 @@
 'use strict';
-import { addMainCarouselitem, addMintCarouselitem, addArtistCarouselitem } from "./add-item.js";
+/*import { addMainCarouselitem, addMintCarouselitem, addArtistCarouselitem } from "./add-item.js";*/
 
 document.addEventListener('DOMContentLoaded', () => {
 
-    addMainCarouselitem();
+    /*addMainCarouselitem();
     addMintCarouselitem();
-    addArtistCarouselitem();
+    addArtistCarouselitem();*/
 
 
     /* WOW animate */
@@ -79,15 +79,17 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     function movingAll(object) {
-        moving(object[0], 4);
-        movingReverse(object[1], 4);
-        movingReverse(object[2], 4);
-        moving(object[3], 4);
-        movingReverse(object[4], 4);
-        moving(object[5], 4);
-        moving(object[6], 4);
-        movingReverse(object[7], 4);
-        movingReverse(object[8], 4);
+        if (document.documentElement.clientWidth > 400) {
+            moving(object[0], 4);
+            movingReverse(object[1], 4);
+            movingReverse(object[2], 4);
+            moving(object[3], 4);
+            movingReverse(object[4], 4);
+            moving(object[5], 4);
+            moving(object[6], 4);
+            movingReverse(object[7], 4);
+            movingReverse(object[8], 4);
+        }
     }
 
     movingAll(moveElement);
