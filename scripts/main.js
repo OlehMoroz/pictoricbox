@@ -1,12 +1,6 @@
 'use strict';
-/*import { addMainCarouselitem, addMintCarouselitem, addArtistCarouselitem } from "./add-item.js";*/
 
 document.addEventListener('DOMContentLoaded', () => {
-
-    /*addMainCarouselitem();
-    addMintCarouselitem();
-    addArtistCarouselitem();*/
-
 
     /* WOW animate */
     const wow = new WOW({
@@ -27,6 +21,82 @@ document.addEventListener('DOMContentLoaded', () => {
 
     wowOffset.init();
     wow.init();
+
+    /* Carousels */
+
+    $('.main-carousel').slick({
+        slidesToShow: 6.6,
+        slidesToScroll: 1,
+        autoplay: false,
+        autoplaySpeed: 2500,
+        speed: 1300,
+        infinite: true,
+        arrows: true,
+        prevArrow: '<button class="carousel-btn prev-btn"></button>',
+        nextArrow: '<button class="carousel-btn next-btn"></button>',
+        responsive: [{
+                breakpoint: 1360,
+                settings: {
+                    slidesToShow: 5.6,
+                }
+            },
+            {
+                breakpoint: 1020,
+                settings: {
+                    slidesToShow: 4.6,
+                }
+            },
+            {
+                breakpoint: 870,
+                settings: {
+                    slidesToShow: 2,
+                    autoplay: false,
+                    infinite: true,
+                }
+            },
+            {
+                breakpoint: 560,
+                settings: {
+                    slidesToShow: 1,
+                    autoplay: false,
+                    infinite: true,
+                    horizontal: true,
+                }
+            }
+        ],
+    });
+
+    $('.can-you-mint_carousel').slick({
+        slidesToShow: 4,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 2500,
+        speed: 1300,
+        infinite: true,
+        arrows: true,
+        prevArrow: '<button class="carousel-btn mint-carousel-btn prev-btn"></button>',
+        nextArrow: '<button class="carousel-btn mint-carousel-btn next-btn"></button>',
+        responsive: [{
+                breakpoint: 1360,
+                settings: {
+                    slidesToShow: 3,
+                }
+            },
+            {
+                breakpoint: 870,
+                settings: {
+                    slidesToShow: 2,
+                }
+            },
+            {
+                breakpoint: 560,
+                settings: {
+                    slidesToShow: 1,
+                    horizontal: true,
+                }
+            }
+        ],
+    });
 
     /* Carousel z-index */
 
@@ -120,79 +190,4 @@ document.addEventListener('DOMContentLoaded', () => {
 
     });
 
-    /* Carousels */
-
-    $('.main-carousel').slick({
-        slidesToShow: 6.6,
-        slidesToScroll: 1,
-        autoplay: false,
-        autoplaySpeed: 2500,
-        speed: 1300,
-        infinite: true,
-        arrows: true,
-        prevArrow: '<button class="carousel-btn prev-btn"></button>',
-        nextArrow: '<button class="carousel-btn next-btn"></button>',
-        responsive: [{
-                breakpoint: 1360,
-                settings: {
-                    slidesToShow: 5.6,
-                }
-            },
-            {
-                breakpoint: 1020,
-                settings: {
-                    slidesToShow: 4.6,
-                }
-            },
-            {
-                breakpoint: 870,
-                settings: {
-                    slidesToShow: 2,
-                    autoplay: false,
-                    infinite: true,
-                }
-            },
-            {
-                breakpoint: 560,
-                settings: {
-                    slidesToShow: 1,
-                    autoplay: false,
-                    infinite: true,
-                    horizontal: true,
-                }
-            }
-        ],
-    });
-
-    $('.can-you-mint_carousel').slick({
-        slidesToShow: 4,
-        slidesToScroll: 1,
-        autoplay: true,
-        autoplaySpeed: 2500,
-        speed: 1300,
-        infinite: true,
-        arrows: true,
-        prevArrow: '<button class="carousel-btn mint-carousel-btn prev-btn"></button>',
-        nextArrow: '<button class="carousel-btn mint-carousel-btn next-btn"></button>',
-        responsive: [{
-                breakpoint: 1360,
-                settings: {
-                    slidesToShow: 3,
-                }
-            },
-            {
-                breakpoint: 870,
-                settings: {
-                    slidesToShow: 2,
-                }
-            },
-            {
-                breakpoint: 560,
-                settings: {
-                    slidesToShow: 1,
-                    horizontal: true,
-                }
-            }
-        ],
-    });
 });
