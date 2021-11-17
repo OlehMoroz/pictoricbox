@@ -425,8 +425,8 @@ header .container .row {
     margin-top: -33%;
     width: 105vw;
     max-width: 1955px;
-    transition: all 1s linear, transform 1300ms linear, opacity 1300ms linear, width 1300ms linear;
-    -webkit-transition: all 1s linear, transform 1300ms linear, opacity 1300ms linear, width 1300ms linear;
+    transition: all 1s linear, transform 500ms linear, opacity 500ms linear, width 500ms linear;
+    -webkit-transition: all 1s linear, transform 500ms linear, opacity 500ms linear, width 500ms linear;
 }
 
 .main-carousel .slick-list .slick-track {
@@ -436,7 +436,7 @@ header .container .row {
     max-height: 1085px;
     min-height: 1085px;
     transition: all 1s linear;
-    -webkit-transition: all 1s linear, transform 1s linear, opacity 1s linear, width 1.3s linear;
+    -webkit-transition: all 1s linear, transform 1s linear, opacity 1s linear, width 500ms linear;
 }
 
 .main-carousel {
@@ -567,8 +567,8 @@ header .container .row {
     line-height: 113%;
     opacity: 1;
     visibility: hidden;
-    transition: all .5s linear, all 1s linear, transform 1s linear, opacity 1.3s linear;
-    -webkit-transition: all .5s linear, transform 1s linear, opacity 1.3s linear;
+    transition: all .5s linear, all 1s linear, transform 1s linear, opacity 500ms linear;
+    -webkit-transition: all .5s linear, transform 1s linear, opacity 500ms linear;
     text-align: center;
     font-family: "Uni Neue", sans-serif;
     min-height: 200px;
@@ -926,7 +926,7 @@ header .container .row {
 }
 
 .mint-artist-image-3 {
-    top: 49%;
+    top: 51%;
     left: 27%;
     border-radius: 50px;
 }
@@ -1412,7 +1412,7 @@ footer .container .row {
         top: 32%;
     }
     .mint_section {
-        background-size: 115%;
+        background-size: 140%;
     }
     .artist-img img {
         width: 130px;
@@ -1459,7 +1459,7 @@ footer .container .row {
     }
     .mint-artist-image-3 {
         left: 16%;
-        top: 54%;
+        top: 56%;
     }
     .mint-artist-image-7 {
         top: 57%;
@@ -1488,7 +1488,7 @@ footer .container .row {
     }
     .mint-artist-image-3 {
         left: 28%;
-        top: 52%;
+        top: 54%;
     }
     .mint-artist-image-5 {
         top: 15%;
@@ -1496,6 +1496,15 @@ footer .container .row {
     .slide-text {
         right: calc(-120% - 125px);
         top: -35px;
+    }
+    .slide-text {
+        max-width: 350px;
+        min-width: 350px;
+        right: calc(-100% - 125px);
+        font-size: 20px;
+    }
+    .second-additional-image {
+        top: 10%;
     }
 }
 
