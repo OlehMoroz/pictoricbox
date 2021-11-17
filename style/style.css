@@ -65,6 +65,11 @@ label {
     line-height: 130%;
 }
 
+button {
+    border: none; 
+    outline: none;
+}
+
 select.form-control,
 textarea.form-control,
 input[type="text"].form-control,
