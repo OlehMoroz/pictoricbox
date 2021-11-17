@@ -2,7 +2,7 @@
 
 document.addEventListener('DOMContentLoaded', () => {
 
-    /* WOW animate */
+    /* WOW animate 
     const wow = new WOW({
         boxClass: 'wow',
         animateClass: 'animate',
@@ -20,7 +20,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     wowOffset.init();
-    wow.init();
+    wow.init();*/
 
     /* Carousels */
 
@@ -122,7 +122,7 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-    /* Moving elemen */
+    /* Moving elemen 
 
     const htmlElement = document.body,
         moveElement = document.querySelectorAll('.move-element'),
@@ -162,7 +162,7 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     }
 
-    movingAll(moveElement);
+    movingAll(moveElement); */
 
     /* mobile menu */
 
