@@ -2,26 +2,6 @@
 
 document.addEventListener('DOMContentLoaded', () => {
 
-    /* WOW animate 
-    const wow = new WOW({
-        boxClass: 'wow',
-        animateClass: 'animate',
-        offset: 10,
-        mobile: true,
-        live: true
-    });
-
-    const wowOffset = new WOW({
-        boxClass: 'wow-offset',
-        animateClass: 'animate',
-        offset: 0,
-        mobile: true,
-        live: true
-    });
-
-    wowOffset.init();
-    wow.init();*/
-
     /* Carousels */
 
     $('.main-carousel').slick({
@@ -30,7 +10,7 @@ document.addEventListener('DOMContentLoaded', () => {
         autoplay: true,
         autoplaySpeed: 3000,
         speed: 500,
-        infinite: true,
+        infinite: false,
         arrows: true,
         prevArrow: '<button class="carousel-btn prev-btn"></button>',
         nextArrow: '<button class="carousel-btn next-btn"></button>',
@@ -50,16 +30,12 @@ document.addEventListener('DOMContentLoaded', () => {
                 breakpoint: 870,
                 settings: {
                     slidesToShow: 2,
-                    autoplay: false,
-                    infinite: true,
                 }
             },
             {
                 breakpoint: 560,
                 settings: {
                     slidesToShow: 1,
-                    autoplay: false,
-                    infinite: true,
                     horizontal: true,
                 }
             }
@@ -72,7 +48,7 @@ document.addEventListener('DOMContentLoaded', () => {
         autoplay: true,
         autoplaySpeed: 3000,
         speed: 500,
-        infinite: true,
+        infinite: false,
         arrows: true,
         prevArrow: '<button class="carousel-btn mint-carousel-btn prev-btn"></button>',
         nextArrow: '<button class="carousel-btn mint-carousel-btn next-btn"></button>',
@@ -121,48 +97,6 @@ document.addEventListener('DOMContentLoaded', () => {
             carouseWrap.style.cssText = 'z-index: 0';
         });
     });
-
-    /* Moving elemen 
-
-    const htmlElement = document.body,
-        moveElement = document.querySelectorAll('.move-element'),
-        moveElementTube = document.querySelector('.mint-tube');
-
-
-    function moving(object, speed) {
-        htmlElement.addEventListener('mousemove', event => {
-            let X = Math.floor(((event.pageX) / speed - 150) / 10) + 'px';
-            let Y = Math.floor(((event.pageY) / speed - 150) / 11) + 'px';
-
-            object.style.transform = `translate(${X}, ${Y})`;
-            moveElementTube.style.transform = `translate(${X}, ${Y}) rotate(-13.43deg)`;
-        });
-    }
-
-    function movingReverse(object, speed) {
-        htmlElement.addEventListener('mousemove', event => {
-            let X = '-' + Math.floor(((event.pageX) / speed - 150) / 11) + 'px';
-            let Y = '-' + Math.floor(((event.pageY) / speed - 150) / 12) + 'px';
-
-            object.style.transform = `translate(${X}, ${Y})`;
-        });
-    }
-
-    function movingAll(object) {
-        if (document.documentElement.clientWidth > 400) {
-            moving(object[0], 4);
-            movingReverse(object[1], 4);
-            movingReverse(object[2], 4);
-            moving(object[3], 4);
-            movingReverse(object[4], 4);
-            moving(object[5], 4);
-            moving(object[6], 4);
-            movingReverse(object[7], 4);
-            movingReverse(object[8], 4);
-        }
-    }
-
-    movingAll(moveElement); */
 
     /* mobile menu */
 
