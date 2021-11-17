@@ -3,12 +3,14 @@ html {
     max-width: 100vw;
     overflow-x: hidden;
     width: 100vw;
+    -webkit-overflow-scrolling: touch;
 }
 
 html * {
     outline: none !important;
     margin: 0;
     padding: 0;
+    -webkit-overflow-scrolling: touch;
 }
 
 
@@ -66,7 +68,7 @@ label {
 }
 
 button {
-    border: none; 
+    border: none;
     outline: none;
 }
 
