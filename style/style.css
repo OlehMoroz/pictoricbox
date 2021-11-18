@@ -2404,21 +2404,20 @@ footer .container .row {
     }
 }
 
+@media screen and (max-width: 415px) {}
+
 @media screen and (max-width: 400px) {
     .second-additional-image {
         top: -4%;
     }
     .mint_section {
-        padding: 55% 0 145%;
-    }
-    .mint-artist-image-6 {
-        top: 35%;
+        padding: 130% 0 145%;
     }
     .mint-artist-image-4 {
-        top: 22%;
+        top: 30%;
     }
     .mint-artist-image-6 {
-        top: 24%;
+        top: 29%;
     }
     .mint-content {
         margin: 125px auto 207px;
@@ -2456,6 +2455,9 @@ footer .container .row {
     }
     .mint_section {
         padding: 65% 0 145%;
+    }
+    .mint-artist-image-4 {
+        top: 26%;
     }
 }
 
