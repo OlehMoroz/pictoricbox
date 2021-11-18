@@ -1891,8 +1891,14 @@ footer .container .row {
     .carousel-btn {
         top: 47%;
     }
-    .main-carousel-item.slick-current.slick-active {
-        margin-top: 45px;
+    /*.main-carousel-item.slick-current.slick-active {
+        margin-top: 15px;
+    }*/
+    .main-carousel-item {
+        margin-top: 0px !important;
+    }
+    .main-carousel-item:nth-child(2n) {
+        margin-top: 15px !important;
     }
     .can-you-mint_item:nth-child(2n),
     .main-carousel-item:nth-child(2n),
