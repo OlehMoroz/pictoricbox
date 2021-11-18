@@ -2430,6 +2430,9 @@ footer .container .row {
         top: 53%;
         right: -14%;
     }
+    .mint-artist-image-2 {
+        display: none;
+    }
 }
 
 @media screen and (max-width: 390px) {
@@ -2437,7 +2440,7 @@ footer .container .row {
         margin: 260px auto 207px;
     }
     .mint-artist-image-6 {
-        top: 36%;
+        top: 25%;
     }
     .main-carousel .slick-list .slick-track {
         display: -webkit-box;
@@ -2452,7 +2455,7 @@ footer .container .row {
         align-items: flex-start;
     }
     .mint_section {
-        padding: 110% 0 145%;
+        padding: 65% 0 145%;
     }
 }
 
