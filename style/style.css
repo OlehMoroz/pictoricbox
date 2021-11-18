@@ -587,21 +587,21 @@ header .container .row {
     filter: drop-shadow(0px 40px 60px rgba(0, 0, 0, 0.15));
     border-radius: 50px;
     border: 3px solid rgba(255, 255, 255, 0.35);
-    -webkit-transition: all 1s linear;
-    -o-transition: all 1s linear;
-    transition: all 1s linear;
-    -webkit-transition: all 1s linear, transform 1s linear, opacity 1s linear;
+    -webkit-transition: all .5s linear;
+    -o-transition: all .5s linear;
+    transition: all .5s linear;
+    -webkit-transition: all .5s linear, transform .5s linear, opacity.5s linear;
 }
 
 .artist-item {
     opacity: 0;
     visibility: hidden;
-    -webkit-transition: all .5s linear, all 1s linear, opacity 1s linear, right 1.05s linear, -webkit-transform 1s linear;
-    transition: all .5s linear, all 1s linear, opacity 1s linear, right 1.05s linear, -webkit-transform 1s linear;
-    -o-transition: all .5s linear, all 1s linear, transform 1s linear, opacity 1s linear, right 1.05s linear;
-    transition: all .5s linear, all 1s linear, transform 1s linear, opacity 1s linear, right 1.05s linear;
-    transition: all .5s linear, all 1s linear, transform 1s linear, opacity 1s linear, right 1.05s linear, -webkit-transform 1s linear;
-    -webkit-transition: all .5s linear, transform 1s linear, opacity 1s linear, right 1.05s linear;
+    -webkit-transition: all .5s linear, all .5s linear, opacity .5s linear, right .5s linear, -webkit-transform .5s linear;
+    transition: all .5s linear, all .5s linear, opacity .5s linear, right .5s linear, -webkit-transform .5s linear;
+    -o-transition: all .5s linear, all .5s linear, opacity .5s linear, right .5s linear, -webkit-transform .5s linear;
+    transition: all .5s linear, all .5s linear, opacity .5s linear, right .5s linear, -webkit-transform .5s linear;
+    transition: all .5s linear, all .5s linear, opacity .5s linear, right .5s linear, -webkit-transform .5s linear;
+    -webkit-transition: all .5s linear, all .5s linear, opacity .5s linear, right .5s linear, -webkit-transform .5s linear;
     position: absolute;
     z-index: 1;
     -webkit-box-sizing: border-box;
@@ -2409,22 +2409,26 @@ footer .container .row {
         top: -4%;
     }
     .mint_section {
-        padding: 145% 0 145%;
+        padding: 55% 0 145%;
     }
     .mint-artist-image-6 {
         top: 35%;
     }
     .mint-artist-image-4 {
-        top: 33%;
+        top: 22%;
     }
     .mint-artist-image-6 {
-        top: 31%;
+        top: 24%;
     }
     .mint-content {
         margin: 125px auto 207px;
     }
     .mint_section {
         margin: -210% auto -135%;
+    }
+    .mint-tube {
+        top: 53%;
+        right: -14%;
     }
 }
 
@@ -2447,6 +2451,9 @@ footer .container .row {
         -ms-flex-align: start;
         align-items: flex-start;
     }
+    .mint_section {
+        padding: 110% 0 145%;
+    }
 }
 
 @media screen and (max-width: 380px) {
@@ -2468,7 +2475,7 @@ footer .container .row {
         text-align: center;
     }
     .mint-artist-image-4 {
-        top: 36%;
+        top: 31%;
     }
     .mint-tube {
         right: -10%;
@@ -2485,7 +2492,7 @@ footer .container .row {
         right: -17%;
     }
     .mint-artist-image-6 {
-        top: 33%;
+        top: 32%;
     }
     .artist_section .container .row .second-additional-image {
         top: -12%;
