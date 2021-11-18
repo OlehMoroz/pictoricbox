@@ -2349,6 +2349,19 @@ footer .container .row {
         left: 75%;
     }
 }
+@media screen and (max-width: 461px) {
+    .second-additional-image {
+        top: -4%;
+    }
+    
+    .second-additional-image-artist {
+        top: -9%;
+    }
+    .main-carousel .slick-list .slick-track {
+        min-height: 960px;
+        max-height: 960px;
+    }
+}
 
 @media screen and (max-width: 440px) {
     .second-additional-image {
@@ -2372,6 +2385,11 @@ footer .container .row {
     }
     .second-additional-image-artist {
         top: -10%;
+    }
+    
+    .main-carousel_section {
+        max-height: 1075px;
+        min-height: 1075px;
     }
 }
 
