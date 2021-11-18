@@ -2500,4 +2500,7 @@ footer .container .row {
     .artist_section .container .row .second-additional-image {
         top: -12%;
     }
+    .mint_section {
+        padding: 123% 0 145%;
+    }
 }
