@@ -1048,7 +1048,7 @@ header .container .row {
 
 .mint-artist-image-3 {
     top: 51%;
-    left: 27%;
+    left: 23%;
     border-radius: 50px;
 }
 
@@ -1069,7 +1069,7 @@ header .container .row {
 }
 
 .mint-artist-image-7 {
-    top: 52%;
+    top: 55%;
     right: 28%;
     border-radius: 40px;
 }
@@ -2404,7 +2404,11 @@ footer .container .row {
     }
 }
 
-@media screen and (max-width: 415px) {}
+@media screen and (max-width: 415px) {
+.mint-tube {
+    top: 58%;
+    }
+}
 
 @media screen and (max-width: 400px) {
     .second-additional-image {
@@ -2426,7 +2430,7 @@ footer .container .row {
         margin: -210% auto -135%;
     }
     .mint-tube {
-        top: 53%;
+        top: 57%;
         right: -14%;
     }
     .mint-artist-image-2 {
