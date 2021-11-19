@@ -4,7 +4,40 @@ document.addEventListener('DOMContentLoaded', () => {
 
     /* Carousels */
 
-    $('.main-carousel').slick({
+    const popularSwiper = new Swiper(document.getElementById('main-carousel'), {
+        slidesPerView: 6,
+        spaceBetween: 15,
+        loop: true,
+        autoplay: true,
+        /*navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        }, */         
+    });
+
+    const illustrationSwiper = new Swiper(document.getElementById('mint-carousel'), {
+        slidesPerView: 4,
+        spaceBetween: 15,
+        loop: true,
+        autoplay: true,
+        /*navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        }, */         
+    });
+
+    const artistSwiper = new Swiper(document.getElementById('artist-carousel'), {
+        slidesPerView: 4,
+        spaceBetween: 15,
+        loop: true,
+        autoplay: true,
+        /*navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        }, */         
+    });
+
+    /*$('.main-carousel').slick({
         slidesToShow: 6.6,
         slidesToScroll: 1,
         autoplay: true,
@@ -72,7 +105,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 }
             }
         ],
-    });
+    });*/
 
     /* Carousel z-index */
 
