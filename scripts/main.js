@@ -9,10 +9,10 @@ document.addEventListener('DOMContentLoaded', () => {
         spaceBetween: 15,
         loop: true,
         autoplay: true,
-        /*navigation: {
-            nextEl: '.swiper-button-next',
-            prevEl: '.swiper-button-prev',
-        }, */         
+        navigation: {
+            nextEl: '.next-btn',
+            prevEl: '.prev-btn',
+        },
     });
 
     const illustrationSwiper = new Swiper(document.getElementById('mint-carousel'), {
@@ -23,7 +23,7 @@ document.addEventListener('DOMContentLoaded', () => {
         /*navigation: {
             nextEl: '.swiper-button-next',
             prevEl: '.swiper-button-prev',
-        }, */         
+        }, */
     });
 
     const artistSwiper = new Swiper(document.getElementById('artist-carousel'), {
@@ -34,7 +34,11 @@ document.addEventListener('DOMContentLoaded', () => {
         /*navigation: {
             nextEl: '.swiper-button-next',
             prevEl: '.swiper-button-prev',
-        }, */         
+        }, */
+    });
+
+    let lazyLoadInstance = new LazyLoad({
+        elements_selector: ".lazy",
     });
 
     /*$('.main-carousel').slick({
