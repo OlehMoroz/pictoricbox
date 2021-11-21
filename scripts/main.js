@@ -5,14 +5,37 @@ document.addEventListener('DOMContentLoaded', () => {
     /* Carousels */
 
     const popularSwiper = new Swiper(document.getElementById('main-carousel'), {
-        slidesPerView: 6,
+        slidesPerView: 5.5,
         spaceBetween: 15,
         loop: true,
-        autoplay: true,
+        autoplay: false,
         navigation: {
             nextEl: '.next-btn',
             prevEl: '.prev-btn',
         },
+        breakpoints: {
+            // when window width is >= 320px
+            320: {
+                slidesPerView: 1,
+            },
+            // when window width is >= 480px
+            560: {
+                slidesPerView: 3,
+            },
+            // when window width is >= 640px
+            640: {
+                slidesPerView: 3,
+            },
+            1360: {
+                slidesPerView: 3.5,
+            },
+            1370: {
+                slidesPerView: 4.5,
+            },
+            1390: {
+                slidesPerView: 5.5,
+            }
+        }
     });
 
     const illustrationSwiper = new Swiper(document.getElementById('mint-carousel'), {
@@ -20,10 +43,22 @@ document.addEventListener('DOMContentLoaded', () => {
         spaceBetween: 15,
         loop: true,
         autoplay: true,
-        /*navigation: {
-            nextEl: '.swiper-button-next',
-            prevEl: '.swiper-button-prev',
-        }, */
+        navigation: {
+            nextEl: '.next-btn',
+            prevEl: '.prev-btn',
+        },
+        breakpoints: {
+            // when window width is >= 320px
+            320: {
+                slidesPerView: 1,
+            },
+            600: {
+                slidesPerView: 3,
+            },
+            1180: {
+                slidesPerView: 4,
+            },
+        }
     });
 
     const artistSwiper = new Swiper(document.getElementById('artist-carousel'), {
@@ -31,10 +66,22 @@ document.addEventListener('DOMContentLoaded', () => {
         spaceBetween: 15,
         loop: true,
         autoplay: true,
-        /*navigation: {
-            nextEl: '.swiper-button-next',
-            prevEl: '.swiper-button-prev',
-        }, */
+        navigation: {
+            nextEl: '.next-btn',
+            prevEl: '.prev-btn',
+        },
+        breakpoints: {
+            // when window width is >= 320px
+            320: {
+                slidesPerView: 1,
+            },
+            600: {
+                slidesPerView: 3,
+            },
+            1180: {
+                slidesPerView: 4,
+            },
+        }
     });
 
     let lazyLoadInstance = new LazyLoad({
