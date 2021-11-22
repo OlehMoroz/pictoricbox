@@ -116,7 +116,7 @@ button:hover {
 }
 
 img {
-    max-height: 600px;
+    max-height: 770px;
     transition: all .4s linear;
 }
 
@@ -428,6 +428,7 @@ header .container .row {
     opacity: 1;
     visibility: visible;
 }
+
 
 /*.install-button-border::before {
     content: "";
@@ -1973,7 +1974,6 @@ footer .container .row {
         display: none;
     }
     .main-carousel .swiper-wrapper .swiper-slide-active {
-        width: 100% !important;
         bottom: 0;
     }
     .menu-wrap {
@@ -2168,8 +2168,11 @@ footer .container .row {
         color: #fff;
     }
     .main-carousel-item .artist-item {
-        top: 50%;
+        top: 35%;
         right: 57%;
+    }
+    .mint-text {
+        min-width: 430px;
     }
 }
 
@@ -2181,10 +2184,13 @@ footer .container .row {
         top: 35%;
     }
     .mint-tube {
-        top: 47%;
+        top: 56%;
+    }
+    .mint-artist-image-5 {
+        top: 61%;
     }
     .mint-artist-image-2 {
-        top: 53%;
+        top: 62%;
         left: 60%;
     }
     .mint-artist-image-4 {
@@ -2202,6 +2208,33 @@ footer .container .row {
         opacity: 1;
         visibility: visible;
     }
+    .main-carousel-item .artist-item {
+        top: 39%;
+    }
+    .mint_section {
+        padding: 905px 0 870px;
+        margin: -1270px auto -850px;
+        background-size: 320%;
+    }
+    .carousel-btn {
+        top: 53%;
+    }
+    .carousel-btn {
+        right: 18%;
+    }
+    .next-btn {
+        right: calc(18% - 52.6px - 17px);
+    }
+    .swiper-slide-active .slide-text {
+        max-width: 155%;
+        min-width: 155%;
+    }
+    .carousel-btn.mint-carousel-btn {
+        top: 12%;
+    }
+    .second-additional-image {
+        left: -10%;
+    }
 }
 
 @media screen and (max-width: 560px) {
@@ -2209,9 +2242,9 @@ footer .container .row {
         margin: 240px auto 207px;
     }
     .mint_section {
-        padding: 100% 0 150%;
-        margin: -180% auto -145%;
-        background-size: 415%;
+        padding: 580px 0 128%;
+        margin: -1095px auto -115%;
+        background-size: 380%;
     }
     footer .container .row {
         -webkit-box-orient: vertical;
@@ -2287,17 +2320,22 @@ footer .container .row {
     .artist-item {
         top: 30%;
     }
+    .swiper-slide-active .slide-text {
+        max-width: 140%;
+        min-width: 140%;
+    }
 }
 
 @media screen and (max-width: 520px) {
     .mint_section {
-        padding: 135% 0 145%;
+        padding: 830px 0 145%;
+        background-size: 450%;
     }
     .mint-artist-image-4 {
-        top: 35%;
+        top: 40%;
     }
     .mint-tube {
-        top: 58%;
+        top: 65%;
     }
     .mint-content {
         width: 69%;
@@ -2315,7 +2353,7 @@ footer .container .row {
         top: -7%;
     }
     .mint-artist-image-2 {
-        top: 63%;
+        top: 70%;
         left: 47%;
     }
     .second-additional-image {
@@ -2325,8 +2363,27 @@ footer .container .row {
         min-height: 910px;
     }
     .mint-artist-image-6 {
-        top: 35%;
+        top: 41%;
         left: 75%;
+    }
+    .main-carousel .swiper-wrapper .swiper-slide-active {
+        width: 100% !important;
+    }
+    .main-carousel-item .artist-item {
+        top: 50%;
+    }
+    .swiper-slide-active .slide-text {
+        max-width: 100%;
+        min-width: 100%;
+    }
+    .mint-artist-image-5 {
+        top: 68%;
+    }
+}
+
+@media screen and (max-widht: 490px) {
+    .main-carousel-item .artist-item {
+        top: 48%;
     }
 }
 
@@ -2362,7 +2419,7 @@ footer .container .row {
         left: 10%;
     }
     .mint-tube {
-        top: 52%;
+        top: 55%;
         right: -6%;
     }
     .second-additional-image-artist {
@@ -2374,6 +2431,12 @@ footer .container .row {
     }
     .main-carousel-item .artist-item {
         top: 45%;
+    }
+    .mint-artist-image-5 {
+        top: 63%;
+    }
+    .mint-artist-image-2 {
+        top: 63%;
     }
 }
 
@@ -2514,5 +2577,8 @@ footer .container .row {
     }
     .artist_section .container .row .second-additional-image {
         top: -12%;
+    }
+    .main-carousel-item .artist-item {
+        top: 39%;
     }
 }

@@ -14,15 +14,12 @@ document.addEventListener('DOMContentLoaded', () => {
             prevEl: '.prev-btn',
         },
         breakpoints: {
-            // when window width is >= 320px
             320: {
                 slidesPerView: 1,
             },
-            // when window width is >= 480px
-            560: {
-                slidesPerView: 3,
+            520: {
+                slidesPerView: 2,
             },
-            // when window width is >= 640px
             640: {
                 slidesPerView: 3,
             },
@@ -48,11 +45,13 @@ document.addEventListener('DOMContentLoaded', () => {
             prevEl: '.prev-btn',
         },
         breakpoints: {
-            // when window width is >= 320px
             320: {
                 slidesPerView: 1,
             },
-            600: {
+            520: {
+                slidesPerView: 2,
+            },
+            640: {
                 slidesPerView: 3,
             },
             1180: {
@@ -71,11 +70,13 @@ document.addEventListener('DOMContentLoaded', () => {
             prevEl: '.prev-btn',
         },
         breakpoints: {
-            // when window width is >= 320px
             320: {
                 slidesPerView: 1,
             },
-            600: {
+            520: {
+                slidesPerView: 2,
+            },
+            640: {
                 slidesPerView: 3,
             },
             1180: {
