@@ -399,6 +399,35 @@ header .container .row {
     background: url("../assets/images/button-before.webp") center / 100% 100% no-repeat;
 }
 
+.pop-up-wrap {
+    position: relative;
+}
+
+.pop-up-wallet-text {
+    position: absolute;
+    background: #ffffff;
+    box-shadow: 0px 20px 40px rgb(17 26 69 / 10%);
+    border: none;
+    height: auto;
+    width: 300%;
+    padding: 20px;
+    left: 50%;
+    top: 90%;
+    transition: all .3s linear;
+    opacity: 0;
+    visibility: hidden;
+    border-radius: 3px;
+    max-width: 300px;
+    transform: translateX(-50%);
+    font-size: 13px;
+    font-family: "Uni Neue", sans-serif;
+}
+
+.pop-up-wrap:hover .pop-up-wallet-text {
+    top: 115%;
+    opacity: 1;
+    visibility: visible;
+}
 
 /*.install-button-border::before {
     content: "";
