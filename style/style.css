@@ -1941,6 +1941,9 @@ footer .container .row {
     .main-carousel_section {
         min-height: 1160px;
     }
+    .main-carousel-item .artist-item {
+        max-width: 210px;
+    }
 }
 
 @media screen and (max-width: 650px) {
