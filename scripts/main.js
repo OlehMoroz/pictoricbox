@@ -2,85 +2,97 @@
 
 /* Carousels */
 
-const popularSwiper = new Swiper(document.getElementById('main-carousel'), {
-    slidesPerView: 5.5,
-    spaceBetween: 15,
-    loop: true,
-    autoplay: false,
-    navigation: {
-        nextEl: '.next-btn',
-        prevEl: '.prev-btn',
-    },
-    breakpoints: {
-        320: {
-            slidesPerView: 1,
-        },
-        520: {
-            slidesPerView: 2,
-        },
-        640: {
-            slidesPerView: 3,
-        },
-        1360: {
-            slidesPerView: 3.5,
-        },
-        1370: {
-            slidesPerView: 4.5,
-        },
-        1390: {
+function addCarousels() {
+    let windowWidth = document.documentElement.clientWidth;
+
+    if (windowWidth > 1100) {
+        const popularSwiper = new Swiper(document.getElementById('main-carousel'), {
             slidesPerView: 5.5,
-        }
-    }
-});
+            spaceBetween: 15,
+            loop: true,
+            autoplay: false,
+            navigation: {
+                nextEl: '.next-btn',
+                prevEl: '.prev-btn',
+            },
+            breakpoints: {
+                320: {
+                    slidesPerView: 1,
+                },
+                520: {
+                    slidesPerView: 2,
+                },
+                640: {
+                    slidesPerView: 3,
+                },
+                1360: {
+                    slidesPerView: 3.5,
+                },
+                1370: {
+                    slidesPerView: 4.5,
+                },
+                1390: {
+                    slidesPerView: 5.5,
+                }
+            }
+        });
 
-const illustrationSwiper = new Swiper(document.getElementById('mint-carousel'), {
-    slidesPerView: 4,
-    spaceBetween: 15,
-    loop: true,
-    autoplay: true,
-    navigation: {
-        nextEl: '.next-btn',
-        prevEl: '.prev-btn',
-    },
-    breakpoints: {
-        320: {
-            slidesPerView: 1,
-        },
-        520: {
-            slidesPerView: 2,
-        },
-        640: {
-            slidesPerView: 3,
-        },
-        1180: {
+        const illustrationSwiper = new Swiper(document.getElementById('mint-carousel'), {
             slidesPerView: 4,
-        },
-    }
-});
+            spaceBetween: 15,
+            loop: true,
+            autoplay: true,
+            navigation: {
+                nextEl: '.next-btn',
+                prevEl: '.prev-btn',
+            },
+            breakpoints: {
+                320: {
+                    slidesPerView: 1,
+                },
+                520: {
+                    slidesPerView: 2,
+                },
+                640: {
+                    slidesPerView: 3,
+                },
+                1180: {
+                    slidesPerView: 4,
+                },
+            }
+        });
 
-const artistSwiper = new Swiper(document.getElementById('artist-carousel'), {
-    slidesPerView: 4,
-    spaceBetween: 15,
-    loop: true,
-    autoplay: true,
-    navigation: {
-        nextEl: '.next-btn',
-        prevEl: '.prev-btn',
-    },
-    breakpoints: {
-        320: {
-            slidesPerView: 1,
-        },
-        520: {
-            slidesPerView: 2,
-        },
-        640: {
-            slidesPerView: 3,
-        },
-        1180: {
+        const artistSwiper = new Swiper(document.getElementById('artist-carousel'), {
             slidesPerView: 4,
-        },
+            spaceBetween: 15,
+            loop: true,
+            autoplay: true,
+            navigation: {
+                nextEl: '.next-btn',
+                prevEl: '.prev-btn',
+            },
+            breakpoints: {
+                320: {
+                    slidesPerView: 1,
+                },
+                520: {
+                    slidesPerView: 2,
+                },
+                640: {
+                    slidesPerView: 3,
+                },
+                1180: {
+                    slidesPerView: 4,
+                },
+            }
+        });
     }
+}
+
+addCarousels();
+
+window.addEventListener('resize', () => {
+    addCarousels();
 });
 
 let lazyLoadInstance = new LazyLoad({
@@ -102,6 +114,9 @@ document.addEventListener('DOMContentLoaded', () => {
         item.addEventListener('mouseout', () => {
             carouseWrap.style.cssText = 'z-index: 0';
         });
+        setTimeout(() => {
+            item.classList.add('transition');
+        }, 1000);
     });
 
     carouselBtn.forEach(item => {

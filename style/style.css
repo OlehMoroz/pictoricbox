@@ -429,49 +429,6 @@ header .container .row {
     visibility: visible;
 }
 
-
-/*.install-button-border::before {
-    content: "";
-    z-index: -1;
-    width: calc(100% - 2px);
-    height: calc(100% - 2px);
-    position: absolute;
-    left: 1px;
-    top: 1px;
-    display: block;
-    background: #fff;
-    -webkit-clip-path: url(#button-clip-path);
-    clip-path: url(#button-clip-path);g
-    transition: all .5s linear, all .5s linear, transform .5s linear, opacity .5s linear;
-}
-
-.install-button-border:hover::before {
-    opacity: 0;
-}*/
-
-.main-carousel_content {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
-    margin: 145px 0 62px 50%;
-    position: relative;
-    z-index: 2;
-    -webkit-animation-delay: 3s;
-    animation-delay: 3s;
-}
-
 .button-row {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -542,6 +499,7 @@ header .container .row {
     transition: all 1s linear, transform 500ms linear, opacity 500ms linear, width 500ms linear;
     transition: all 1s linear, transform 500ms linear, opacity 500ms linear, width 500ms linear, -webkit-transform 500ms linear;
     -webkit-transition: all 1s linear, transform 500ms linear, opacity 500ms linear, width 500ms linear;
+    padding-top: 25%;
 }
 
 .main-carousel .slick-list .slick-track {
@@ -583,29 +541,33 @@ header .container .row {
     -webkit-transition: all 1s linear, transform 1s linear, opacity 1s linear, width 1s linear, bottom 1s linear;
 }
 
-.main-carousel-illustration {
+
+/*.main-carousel-illustration {
     -webkit-transition: all 1s linear, opacity 1s linear, width 1s linear, -webkit-transform 1s linear;
     transition: all 1s linear, opacity 1s linear, width 1s linear, -webkit-transform 1s linear;
     -o-transition: all 1s linear, transform 1s linear, opacity 1s linear, width 1s linear;
     transition: all 1s linear, transform 1s linear, opacity 1s linear, width 1s linear;
     transition: all 1s linear, transform 1s linear, opacity 1s linear, width 1s linear, -webkit-transform 1s linear;
     -webkit-transition: all 1s linear, transform 1s linear, opacity 1s linear, width 1s linear;
-}
+}*/
 
 .main-carousel-item {
     margin: 15px .15%;
     padding: 0;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
-    -webkit-transition: all 1s linear, opacity 1s linear, width 1s linear, bottom 1s linear, -webkit-transform 1s linear;
-    transition: all 1s linear, opacity 1s linear, width 1s linear, bottom 1s linear, -webkit-transform 1s linear;
-    -o-transition: all 1s linear, transform 1s linear, opacity 1s linear, width 1s linear, bottom 1s linear;
-    transition: all 1s linear, transform 1s linear, opacity 1s linear, width 1s linear, bottom 1s linear;
-    transition: all 1s linear, transform 1s linear, opacity 1s linear, width 1s linear, bottom 1s linear, -webkit-transform 1s linear;
-    -webkit-transition: all 1s linear, transform 1s linear, opacity 1s linear, width 1s linear, bottom 1s linear;
     position: relative;
     bottom: 0;
     min-height: 730px;
+}
+
+.transition {
+    -webkit-transition: all 1s linear, opacity 1s linear, width .3s linear, bottom 1s linear, -webkit-transform 1s linear;
+    transition: all 1s linear, opacity 1s linear, width .3s linear, bottom 1s linear, -webkit-transform 1s linear;
+    -o-transition: all 1s linear, transform 1s linear, opacity 1s linear, width .3s linear, bottom 1s linear;
+    transition: all 1s linear, transform 1s linear, opacity 1s linear, width .3s linear, bottom 1s linear;
+    transition: all 1s linear, transform 1s linear, opacity 1s linear, width .3s linear, bottom 1s linear, -webkit-transform 1s linear;
+    -webkit-transition: all 1s linear, transform 1s linear, opacity 1s linear, width .3s linear, bottom 1s linear;
 }
 
 .main-carousel-item.slick-current.slick-active {
@@ -918,7 +880,7 @@ header .container .row {
 
 .carousel-btn {
     position: absolute;
-    top: -10%;
+    top: 25%;
     right: 10%;
     width: 52.6px;
     height: 52.6px;
@@ -1543,7 +1505,7 @@ footer .container .row {
         width: 90%;
     }
     .slide-text {
-        right: calc(-135% - 125px);
+        right: calc(-100% - 125px);
         top: 50px;
     }
 }
@@ -1555,9 +1517,6 @@ footer .container .row {
     .mint-artist-image-8 {
         right: 1%;
         top: 30%;
-    }
-    .main-carousel_content {
-        margin: 40px 0 62px 50%;
     }
     .first-additional-image {
         position: absolute;
@@ -1596,10 +1555,10 @@ footer .container .row {
         top: -163px;
     }
     .carousel-btn {
-        top: -10%;
+        top: 25%;
     }
     .slide-text {
-        right: calc(-130% - 125px);
+        right: calc(-100% - 125px);
         top: -35px;
     }
 }
@@ -1658,14 +1617,11 @@ footer .container .row {
         top: 15%;
     }
     .slide-text {
-        right: calc(-120% - 125px);
-        top: -35px;
-    }
-    .slide-text {
         max-width: 350px;
         min-width: 350px;
-        right: calc(-90% - 125px);
+        right: calc(-85% - 125px);
         font-size: 20px;
+        top: -35px;
     }
     .second-additional-image {
         top: 10%;
@@ -1704,36 +1660,57 @@ footer .container .row {
         left: -3%;
         top: 2%;
     }
-    .slide-text {
-        right: calc(-105% - 125px);
-        top: -35px;
-        max-width: 350px;
-        min-width: 350px;
-    }
-    .slide-text {
-        right: calc(-80% - 125px);
-        top: -35px;
-        max-width: 250px;
-        min-width: 250px;
-    }
     .carousel-btn {
         top: 60%;
-    }
-    .carousel-btn.mint-carousel-btn {
-        right: 20%;
-    }
-    .mint-carousel-btn.next-btn {
-        right: calc(20% - 52.6px - 17px);
+        display: none;
     }
     .bird-img {
         top: -10%;
     }
+    .main-carousel-item,
+    .can-you-mint_item {
+        max-width: 310px;
+        margin-left: 7px;
+        margin-right: 7px;
+    }
+    .main-carousel .swiper-wrapper,
+    .can-you-mint_carousel .swiper-wrapper {
+        overflow-x: auto;
+        width: 116%;
+        margin-left: -6%;
+        padding-left: 4%;
+        padding-right: 4%;
+        box-sizing: border-box;
+    }
+    .artist-item {
+        opacity: 1;
+        visibility: visible;
+        top: 135px;
+        right: auto;
+    }
+    .slide-text {
+        opacity: 1;
+        visibility: visible;
+        position: relative;
+        right: 0;
+        left: 0;
+        margin-bottom: 20px;
+    }
+    .menu-wrap {
+        display: none;
+    }
+    .second-additional-image {
+        display: none;
+    }
+    .second-additional-image-artist {
+        display: block;
+    }
+    .main-carousel-wrap {
+        padding-top: 0;
+    }
 }
 
 @media screen and (max-width: 1020px) {
-    .main-carousel_content {
-        margin: 40px auto 62px;
-    }
     .main-carousel .slick-list .slick-track {
         padding-top: 30%;
     }
@@ -1776,9 +1753,6 @@ footer .container .row {
     .main-spacer {
         height: 80px;
     }
-    .main-carousel_content {
-        margin: 0;
-    }
 }
 
 @media screen and (max-width: 870px) {
@@ -1794,9 +1768,6 @@ footer .container .row {
         width: 80px;
         height: 80px;
         border-radius: 10px;
-    }
-    .main-carousel-wrap {
-        width: 87vw;
     }
     .main-carousel .slick-list {
         overflow: visible;
@@ -1856,9 +1827,6 @@ footer .container .row {
     .main-carousel-wrap {
         margin-top: 0;
     }
-    .main-carousel_content {
-        margin: 60px auto 20px;
-    }
     .logo img {
         width: 163px;
         height: 30px;
@@ -1891,18 +1859,18 @@ footer .container .row {
     }
     .mint-tube {
         right: 0%;
-        top: 45%;
+        top: 50%;
     }
     .mint-artist-image-6 {
         top: 35%;
-        left: 89%;
+        left: 91%;
         width: 60px !important;
         height: 60px !important;
         border-radius: 20px;
     }
     .mint-artist-image-4 {
         top: 37%;
-        left: 15%;
+        left: 6%;
         width: 60px;
         height: 60px;
         border-radius: 10px;
@@ -1967,6 +1935,12 @@ footer .container .row {
         -ms-flex-order: 1;
         order: 1;
     }
+    .artist-item {
+        top: 195px;
+    }
+    .main-carousel_section {
+        min-height: 1160px;
+    }
 }
 
 @media screen and (max-width: 650px) {
@@ -1990,6 +1964,7 @@ footer .container .row {
         overflow: hidden;
         transition: all .6s linear;
         -webkit-transition: all .6s ease-out;*/
+        display: flex;
         opacity: 1;
         visibility: visible;
     }
@@ -2168,8 +2143,7 @@ footer .container .row {
         color: #fff;
     }
     .main-carousel-item .artist-item {
-        top: 35%;
-        right: 57%;
+        right: 40%;
     }
     .mint-text {
         min-width: 430px;
@@ -2200,9 +2174,13 @@ footer .container .row {
         flex-direction: column;
         display: flex;
     }
-    .main-carousel .swiper-wrapper .swiper-slide-active .slide-text {
+    .slide-text {
+        color: #fff;
         opacity: 1;
         visibility: visible;
+        display: flex;
+        align-items: flex-start;
+        margin-top: 25px;
     }
     .main-carousel .swiper-wrapper .swiper-slide-active .artist-item {
         opacity: 1;
@@ -2370,7 +2348,7 @@ footer .container .row {
         width: 100% !important;
     }
     .main-carousel-item .artist-item {
-        top: 50%;
+        top: 37%;
     }
     .swiper-slide-active .slide-text {
         max-width: 100%;
@@ -2430,7 +2408,7 @@ footer .container .row {
         min-height: 1075px;
     }
     .main-carousel-item .artist-item {
-        top: 45%;
+        top: 37%;
     }
     .mint-artist-image-5 {
         top: 63%;
