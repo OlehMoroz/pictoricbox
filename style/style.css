@@ -609,7 +609,7 @@ header .container .row {
     z-index: 1;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
-    background: url('assets/images/small-artist-bg.png') center / cover no-repeat;
+    background: url('../assets/images/small-artist-bg.png') center / cover no-repeat;
     color: #fff;
     font-family: "Shnobel", sans-serif;
     font-style: normal;
